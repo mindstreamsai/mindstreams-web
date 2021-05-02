@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include("../partials/head.html")
+  <title>Image | Geeks - Academy Responsive Admin Template</title>
+
+</head>
+
+<body>
+
+  <!-- Main wrapper -->
+  <div class="docs-main-wrapper">
+    @@include("../partials/doc-navbar.html")
+    <!-- left sidebar -->
+    @@include("../partials/docs-sidenav.html")
+    <!-- Wrapper  -->
+    <div class="docs-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <!-- Content -->
+            <div class="docs-content">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-7" id="intro">
+                    <h1 class="mb-2">Image</h1>
+                    <p class="lead">Geeks image grid is a simple construction which allows you to create a responsive layout for your images.</p>
+
+                  </div>
+                </div>
+              </div>
+              <!-- Grid -->
+              <div class="row ">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div id="grid-img" class="mb-4">
+                    <h3>Grid </h3>
+
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-grid-img" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-grid-img-design-tab" data-toggle="pill"
+                          href="#pills-grid-img-design" role="tab" aria-controls="pills-grid-img-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-grid-img-html-tab" data-toggle="pill"
+                          href="#pills-grid-img-html" role="tab" aria-controls="pills-grid-img-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content -->
+                    <div class="tab-content p-4" id="pills-tabContent-grid-img">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-grid-img-design"
+                        role="tabpanel" aria-labelledby="pills-grid-img-design-tab">
+                        <div class="gallery ">
+                            <!-- gallery-item -->
+                             <figure class="gallery__item gallery__item--1 mb-0">
+                               <img src="../assets/images/about/geeksui-img-1.jpg" alt="Gallery image 1" class="gallery__img rounded-lg">
+                             </figure>
+                              <!-- gallery-item -->
+                             <figure class="gallery__item gallery__item--2 mb-0">
+                               <img src="../assets/images/about/geeksui-img-2.jpg" alt="Gallery image 2" class="gallery__img rounded-lg">
+                             </figure>
+                              <!-- gallery-item -->
+                             <figure class="gallery__item gallery__item--3 mb-0">
+                               <img src="../assets/images/about/geeksui-img-3.jpg" alt="Gallery image 3" class="gallery__img rounded-lg">
+                             </figure>
+                              <!-- gallery-item -->
+                             <figure class="gallery__item gallery__item--4 mb-0">
+                               <img src="../assets/images/about/geeksui-img-4.jpg" alt="Gallery image 4" class="gallery__img rounded-lg">
+                             </figure>
+                               <!-- gallery-item -->
+                             <figure class="gallery__item gallery__item--5 mb-0">
+                               <img src="../assets/images/about/geeksui-img-5.jpg" alt="Gallery image 5" class="gallery__img rounded-lg">
+                             </figure>
+                              <!-- gallery-item -->
+                             <figure class="gallery__item gallery__item--6 mb-0">
+                               <img src="../assets/images/about/geeksui-img-6.jpg" alt="Gallery image 6" class="gallery__img rounded-lg">
+                             </figure>
+                           </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-grid-img-html" role="tabpanel"
+                        aria-labelledby="pills-grid-img-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre class="language-markup"><code class="language-markup">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                              <span class="token comment">&lt;!-- gallery-item --&gt;</span>
+                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery__item gallery__item--1 mb-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/about/geeksui-img-1.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Gallery image 1<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery__img rounded-lg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token comment">&lt;!-- gallery-item --&gt;</span>
+                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery__item gallery__item--2 mb-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/about/geeksui-img-2.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Gallery image 2<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery__img rounded-lg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token comment">&lt;!-- gallery-item --&gt;</span>
+                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery__item gallery__item--3 mb-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/about/geeksui-img-3.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Gallery image 3<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery__img rounded-lg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token comment">&lt;!-- gallery-item --&gt;</span>
+                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery__item gallery__item--4 mb-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/about/geeksui-img-4.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Gallery image 4<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery__img rounded-lg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">&gt;</span></span>
+                                 <span class="token comment">&lt;!-- gallery-item --&gt;</span>
+                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery__item gallery__item--5 mb-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/about/geeksui-img-5.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Gallery image 5<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery__img rounded-lg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token comment">&lt;!-- gallery-item --&gt;</span>
+                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery__item gallery__item--6 mb-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/about/geeksui-img-6.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Gallery image 6<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery__img rounded-lg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">&gt;</span></span>
+                             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Grid -->
+
+
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12  d-none d-xl-block position-fixed right-0">
+            <!-- sidebar nav fixed -->
+            <div class="sidebar-nav-fixed">
+              <ul class="list-unstyled">
+                <li><a href="#intro" class="active">Introduction</a></li>
+                <li><a href="#grid-img">Grid</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+
+  @@include("../partials/scripts.html")
+</body>
+
+</html>

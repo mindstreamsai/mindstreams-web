@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include("../partials/head.html")
+  <title>Check & Switches | Geeks - Academy Responsive Admin Template </title>
+
+</head>
+
+<body>
+  <!-- Main wrapper -->
+  <div class="docs-main-wrapper">
+    @@include("../partials/doc-navbar.html")
+    <!-- Left sidebar -->
+    @@include("../partials/docs-sidenav.html")
+    <!-- Wrapper  -->
+    <div class="docs-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <!-- Content  -->
+            <div class="docs-content">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-7" id="intro">
+                    <h1 class="mb-2">Checks & Switches</h1>
+                    <p class="mb-0 lead text-dark">Examples and usage guidelines for checkboxes, switches, and custom
+                      components for creating a wide variety of checkboxes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- checkboxes -->
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div id="checkboxes" class="mb-4">
+                    <h2>Checkboxes</h2>
+                  </div>
+                  <!-- Card  -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-custom-forms" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-checkboxes-design-tab" data-toggle="pill"
+                          href="#pills-checkboxes-design" role="tab" aria-controls="pills-checkboxes-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-checkboxes-html-tab" data-toggle="pill"
+                          href="#pills-checkboxes-html" role="tab" aria-controls="pills-checkboxes-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content  -->
+                    <div class="tab-content p-4" id="pills-tabContent-checkboxes">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-checkboxes-design"
+                        role="tabpanel" aria-labelledby="pills-checkboxes-design-tab">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1">
+                          <label class="custom-control-label" for="customCheck1">Check this
+                            custom checkbox</label>
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-checkboxes-html" role="tabpanel"
+                        aria-labelledby="pills-checkboxes-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control custom-checkbox<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-input<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customCheck1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customCheck1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Check this custom checkbox<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- checkboxes -->
+              <!-- checkbox-second -->
+              <div class="row mt-5">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-4">
+                    <p>Custom checkboxes can also utilize the <code>:indeterminate</code>> pseudo class when manually
+                      set via JavaScript (there is no available HTML attribute for specifying it).</p>
+                  </div>
+                  <!-- Card  -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-checkbox-second" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-checkbox-second-design-tab" data-toggle="pill"
+                          href="#pills-checkbox-second-design" role="tab" aria-controls="pills-checkbox-second-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-checkbox-second-html-tab" data-toggle="pill"
+                          href="#pills-checkbox-second-html" role="tab" aria-controls="pills-checkbox-second-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content  -->
+                    <div class="tab-content p-4" id="pills-tabContent-checkbox-second">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-checkbox-second-design"
+                        role="tabpanel" aria-labelledby="pills-checkbox-second-design-tab">
+                        <div class="custom-control custom-checkbox ">
+                          <input type="checkbox" class="custom-control-input your-checkbox" id="customCheck2"
+                            data-toggle="indeterminate">
+                          <label class="custom-control-label" for="customCheck2">Check this
+                            custom checkbox</label>
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-checkbox-second-html" role="tabpanel"
+                        aria-labelledby="pills-checkbox-second-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control custom-checkbox<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-input<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customCheck2<span class="token punctuation">"</span></span> <span class="token attr-name">data-toggle</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>indeterminate<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customCheck2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Check this custom checkbox<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- checkbox-second -->
+              <!-- predefined-color -->
+              <div class="row mt-5">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-4">
+                    <p>The best part is that you can make checkboxes look like buttons, using any of the pre-defined
+                      colors and styles:</p>
+                  </div>
+                  <!-- Card  -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-predefined-color" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-predefined-color-design-tab" data-toggle="pill"
+                          href="#pills-predefined-color-design" role="tab" aria-controls="pills-predefined-color-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-predefined-color-html-tab" data-toggle="pill"
+                          href="#pills-predefined-color-html" role="tab" aria-controls="pills-predefined-color-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content  -->
+                    <div class="tab-content p-4" id="pills-tabContent-predefined-color">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-predefined-color-design"
+                        role="tabpanel" aria-labelledby="pills-predefined-color-design-tab">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                          <label class="btn btn-primary active">
+                            <input type="checkbox" name="options" id="checkboxButton1" checked> Checkbox button
+                          </label>
+                        </div>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                          <label class="btn btn-primary active">
+                            <input type="checkbox" name="options" id="checkboxButton2" checked> Active
+                          </label>
+                          <label class="btn btn-primary">
+                            <input type="checkbox" name="options" id="checkboxButton3">
+                            Checkbox
+                          </label>
+                          <label class="btn btn-primary">
+                            <input type="checkbox" name="options" id="checkboxButton4">
+                            Checkbox
+                          </label>
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-predefined-color-html" role="tabpanel"
+                        aria-labelledby="pills-predefined-color-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn-group btn-group-toggle<span class="token punctuation">"</span></span> <span class="token attr-name">data-toggle</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>buttons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary active<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkboxButton1<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>off<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span><span class="token punctuation">&gt;</span></span> Checkbox button
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn-group btn-group-toggle<span class="token punctuation">"</span></span> <span class="token attr-name">data-toggle</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>buttons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary active<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkboxButton2<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>off<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span><span class="token punctuation">&gt;</span></span> Active
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkboxButton3<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>off<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> Checkbox
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkboxButton4<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>off<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> Checkbox
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- predefined-color -->
+              <hr class="mb-5 mt-7">
+              <!-- radios -->
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div id="radios" class="mb-4">
+                    <h2>Radios</h2>
+                  </div>
+                  <!-- Card  -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-radios" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-radios-design-tab" data-toggle="pill"
+                          href="#pills-radios-design" role="tab" aria-controls="pills-radios-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-radios-html-tab" data-toggle="pill" href="#pills-radios-html"
+                          role="tab" aria-controls="pills-radios-html" aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content  -->
+                    <div class="tab-content p-4" id="pills-tabContent-radios">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-radios-design" role="tabpanel"
+                        aria-labelledby="pills-radios-design-tab">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadio1">Toggle this
+                            custom radio</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadio2">Or toggle
+                            this other custom radio</label>
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-radios-html" role="tabpanel"
+                        aria-labelledby="pills-radios-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control custom-radio<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customRadio1<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customRadio<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-input<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customRadio1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Toggle this custom radio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control custom-radio<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customRadio2<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customRadio<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-input<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customRadio2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Or toggle this other custom radio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- radios -->
+              <!-- radios-second -->
+              <div class="row mt-5">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <!-- Card  -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-radios-second" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-radios-second-design-tab" data-toggle="pill"
+                          href="#pills-radios-second-design" role="tab" aria-controls="pills-radios-second-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-radios-second-html-tab" data-toggle="pill"
+                          href="#pills-radios-second-html" role="tab" aria-controls="pills-radios-second-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content  -->
+                    <div class="tab-content p-4" id="pills-tabContent-radios-second">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-radios-second-design"
+                        role="tabpanel" aria-labelledby="pills-radios-second-design-tab">
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                            class="custom-control-input">
+                          <label class="custom-control-label" for="customRadioInline1">Toggle
+                            this custom radio</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                            class="custom-control-input">
+                          <label class="custom-control-label" for="customRadioInline2">Or
+                            toggle this other custom radio</label>
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-radios-second-html" role="tabpanel"
+                        aria-labelledby="pills-radios-second-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control custom-radio custom-control-inline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customRadioInline1<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customRadioInline1<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-input<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customRadioInline1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Toggle this custom radio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control custom-radio custom-control-inline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customRadioInline2<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customRadioInline1<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-input<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customRadioInline2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Or toggle this other custom radio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- radios-second -->
+              <!-- radio-button -->
+              <div class="row mt-5">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-4">
+                    <p>The same thing applies to radio buttons too. Make’em look like buttons, using any of the
+                      pre-defined colors and styles:</p>
+                  </div>
+                  <!-- Card  -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-radio-button" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-radio-button-design-tab" data-toggle="pill"
+                          href="#pills-radio-button-design" role="tab" aria-controls="pills-radio-button-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-radio-button-html-tab" data-toggle="pill"
+                          href="#pills-radio-button-html" role="tab" aria-controls="pills-radio-button-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content  -->
+                    <div class="tab-content p-4" id="pills-tabContent-radio-button">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-radio-button-design"
+                        role="tabpanel" aria-labelledby="pills-radio-button-design-tab">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                          <label class="btn btn-primary active">
+                            <input type="radio" name="custom-radio-3" id="radioButton1">
+                            Radio button
+                          </label>
+                        </div>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                          <label class="btn btn-primary active">
+                            <input type="radio" name="custom-radio-2" id="radioButton2" checked> Active
+                          </label>
+                          <label class="btn btn-primary">
+                            <input type="radio" name="custom-radio-2" id="radioButton3">
+                            Radio
+                          </label>
+                          <label class="btn btn-primary">
+                            <input type="radio" name="custom-radio-2" id="radioButton4">
+                            Radio
+                          </label>
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-radio-button-html" role="tabpanel"
+                        aria-labelledby="pills-radio-button-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn-group btn-group-toggle<span class="token punctuation">"</span></span> <span class="token attr-name">data-toggle</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>buttons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary active<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-radio-3<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radioButton1<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>off<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> Radio button
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn-group btn-group-toggle<span class="token punctuation">"</span></span> <span class="token attr-name">data-toggle</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>buttons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary active<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-radio-2<span class="token punctuation">"</span></span>  <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radioButton2<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>off<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span><span class="token punctuation">&gt;</span></span> Active
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-radio-2<span class="token punctuation">"</span></span>  <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radioButton3<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>off<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> Radio
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-radio-2<span class="token punctuation">"</span></span>  <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>radioButton4<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>off<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> Radio
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- radio-button -->
+              <hr class="mb-5 mt-7">
+              <!-- switches -->
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div id="switches" class="mb-4">
+                    <h2>Switches</h2>
+                  </div>
+                  <!-- Card  -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-switches" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-switches-design-tab" data-toggle="pill"
+                          href="#pills-switches-design" role="tab" aria-controls="pills-switches-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-switches-html-tab" data-toggle="pill" href="#pills-switches-html"
+                          role="tab" aria-controls="pills-switches-html" aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content  -->
+                    <div class="tab-content p-4" id="pills-tabContent-switches">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-switches-design"
+                        role="tabpanel" aria-labelledby="pills-switches-design-tab">
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                          <label class="custom-control-label" for="customSwitch1">Toggle this
+                            switch element</label>
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-switches-html" role="tabpanel"
+                        aria-labelledby="pills-switches-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control custom-switch<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-input<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customSwitch1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom-control-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>customSwitch1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Toggle this switch element<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- switches -->
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12  d-none d-xl-block position-fixed right-0">
+            <!-- Sidebar nav fixed  -->
+            <div class="sidebar-nav-fixed">
+              <ul class="list-unstyled">
+                <li><a href="#intro" class="active">Introduction</a></li>
+                <li><a href="#checkboxes">Checkboxes</a></li>
+                <li><a href="#radios">Radios</a></li>
+                <li><a href="#switches">Switches</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scripts -->
+  @@include("../partials/scripts.html")
+
+
+</body>
+
+</html>

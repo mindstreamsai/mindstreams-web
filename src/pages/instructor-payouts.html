@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	@@include("../partials/head.html")
+	<title>Instructor Payouts | Geeks - Academy Admin Template</title>
+</head>
+
+<body>
+	<!-- Page Content -->
+	@@include("../partials/navbar.html",{ "classList": "navbar-default" })
+	<div class="pt-5 pb-5">
+		<div class="container">
+				<!-- User info -->
+			<div class="row align-items-center">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+					<!-- Bg -->
+					<div class="pt-16 rounded-top" style="
+								background: url(../assets/images/background/profile-bg.jpg) no-repeat;
+								background-size: cover;
+							"></div>
+					<div
+						class="d-flex align-items-end justify-content-between bg-white px-4 pt-2 pb-4 rounded-none rounded-bottom shadow-sm">
+						<div class="d-flex align-items-center">
+							<div class="mr-2 position-relative d-flex justify-content-end align-items-end mt-n5">
+								<img src="../assets/images/avatar/avatar-1.jpg" class="avatar-xl rounded-circle border-width-4 border-white position-relative"
+									alt="" />
+								<a href="#!" class="position-absolute top-0 right-0" data-toggle="tooltip" data-placement="top" title=""
+									data-original-title="Verified">
+									<img src="../assets/images/svg/checked-mark.svg" alt="" height="30" width="30" />
+								</a>
+							</div>
+							<div class="lh-1">
+								<h2 class="mb-0">Jenny Wilson</h2>
+								<p class="mb-0 d-block">@Jennywilson</p>
+							</div>
+						</div>
+						<div>
+							<a href="add-course.html" class="btn btn-primary btn-sm d-none d-md-block">Create New Course</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<!-- Content -->
+
+			<div class="row mt-0 mt-md-4">
+				<div class="col-lg-3 col-md-4 col-12">
+					<!-- Navbar -->
+					<nav class="navbar navbar-expand-md navbar-light shadow-sm mb-4 mb-lg-0 sidenav">
+							<!-- Menu -->
+						<a class="d-xl-none d-lg-none d-md-none text-inherit font-weight-bold" href="#!">Menu</a>
+							<!-- Button -->
+						<button class="navbar-toggler d-md-none icon-shape icon-sm rounded bg-primary text-light" type="button"
+							data-toggle="collapse" data-target="#sidenav" aria-controls="sidenav" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="fe fe-menu"></span>
+						</button>
+							<!-- Collpase navbar -->
+						<div class="collapse navbar-collapse" id="sidenav">
+							<div class="navbar-nav flex-column">
+								<span class="navbar-header">Dashboard</span>
+								<ul class="list-unstyled ml-n2 mb-4">
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="dashboard-instructor.html"><i class="fe fe-home nav-icon"></i>My
+											Dashboard</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="instructor-courses.html"><i class="fe fe-book nav-icon"></i>My Courses</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="instructor-reviews.html"><i class="fe fe-star nav-icon"></i>Reviews</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="instructor-earning.html"><i
+												class="fe fe-pie-chart nav-icon"></i>Earnings</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="instructor-order.html"><i
+												class="fe fe-shopping-bag nav-icon"></i>Orders</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="instructor-students.html"><i class="fe fe-users nav-icon"></i>Students</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item active">
+										<a class="nav-link" href="instructor-payouts.html"><i
+												class="fe fe-dollar-sign nav-icon"></i>Payouts</a>
+									</li>
+								</ul>
+									<!-- Navbar header -->
+								<span class="navbar-header">Account Settings</span>
+								<ul class="list-unstyled ml-n2 mb-0">
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="profile-edit.html"><i class="fe fe-settings nav-icon"></i>Edit Profile</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="security.html"><i class="fe fe-user nav-icon"></i>Security</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="social-profile.html"><i class="fe fe-refresh-cw nav-icon"></i>Social
+											Profiles</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="notifications.html"><i class="fe fe-bell nav-icon"></i>Notifications</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="profile-privacy.html"><i class="fe fe-lock nav-icon"></i>Profile
+											Privacy</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="delete-profile.html"><i class="fe fe-trash nav-icon"></i>Delete
+											Profile</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="../index.html"><i class="fe fe-power nav-icon"></i>Sign Out</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="col-lg-9 col-md-8 col-12">
+					<!-- Card -->
+					<div class="card mb-4">
+						<!-- Card header -->
+						<div class="card-header">
+							<h3 class="mb-0">Payout Method</h3>
+							<p class="mb-0">
+								Order Dashboard is a quick overview of all current orders.
+							</p>
+						</div>
+						<!-- Card body -->
+						<div class="card-body">
+							<div class="alert bg-light-warning text-dark-warning alert-dismissible fade show" role="alert">
+								<strong>payout@geeks.com</strong>
+								<p class="mb-0">
+									Your selected payout method was confirmed on Next Payout on
+									15 July, 2020
+								</p>
+									<!-- Button -->
+								<button type="button" class="btn-close close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="row mt-6">
+								<div class="col-xl-4 col-lg-4 col-md-12 col-12 mb-3 mb-lg-0">
+									<div class="text-center">
+										<!-- PayOut chart -->
+										<div id="payoutChart" class="apex-charts"></div>
+										<h4 class="mb-1">Your Earning this month</h4>
+										<h5 class="mb-0 display-4 font-weight-bold">$3,210</h5>
+										<p class="px-4">Update your payout method in settings</p>
+										<a href="#!" class="btn btn-primary">
+											Withdraw Earning
+										</a>
+									</div>
+								</div>
+								<div class="col-xl-8 col-lg-8 col-md-12 col-12">
+									<!-- Check box -->
+									<div class="border p-4 rounded-lg mb-3">
+										<div class="custom-control custom-radio">
+											<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked />
+											<label class="custom-control-label" for="customRadio1">
+												<img src="../assets/images/brand/paypal-small.svg" alt="" />
+											</label>
+											<p>
+												Your paypal account has been authorized for payouts.
+											</p>
+											<a href="#!" class="btn btn-outline-primary">
+												Remove Account</a>
+										</div>
+									</div>
+									<!-- Check box -->
+									<div class="border p-4 rounded-lg mb-3">
+										<div class="custom-control custom-radio">
+											<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" />
+											<label class="custom-control-label pl-1" for="customRadio2">
+												<img src="../assets/images/brand/payoneer.svg" alt="" />
+											</label>
+										</div>
+									</div>
+									<!-- Check box -->
+									<div class="border p-4 rounded-lg">
+										<div class="custom-control custom-radio">
+											<input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" />
+											<label class="custom-control-label pl-1 h4" for="customRadio3">
+												Bank Transfer
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card -->
+					<div class="card mb-4">
+						<!-- Card header -->
+						<div class="card-header border-bottom-0">
+							<h3 class="h4 mb-3">Withdraw History</h3>
+							<div class="row align-items-center">
+								<div class="col-lg-3 col-md-6 pr-md-0 mb-2 mb-lg-0">
+										<!-- Custom select -->
+									<select class="selectpicker" data-width="100%">
+										<option value="">30 days</option>
+										<option value="Last 7 days">2 Months</option>
+										<option value="High Rated">6 Months</option>
+									</select>
+								</div>
+								<div class="col-lg-3 col-md-6 pr-md-0 mb-2 mb-2 mb-lg-0">
+										<!-- Custom select -->
+									<select class="selectpicker" data-width="100%">
+										<option value="">Oct 2020</option>
+										<option value="Jan 2021">Jan 2021</option>
+										<option value="May 2021">May 2021</option>
+									</select>
+								</div>
+								<div class="col-lg-4 col-md-6 mb-2 mb-2 mb-lg-0">
+										<!-- Custom select -->
+									<select class="selectpicker" data-width="100%">
+										<option value="">Transaction Type</option>
+										<option value="cash transactions">
+											Cash Transactions
+										</option>
+										<option value="non-cash transactions">
+											Non Cash Transactions
+										</option>
+										<option value="credit transactions">
+											Credit Transactions
+										</option>
+									</select>
+								</div>
+								<div class="col-lg-2 col-md-6 text-lg-right">
+										<!-- Button -->
+									<a href="#!" class="btn btn-outline-white" download="">
+										<i class="fe fe-download"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- Table -->
+						<div class="table-responsive border-0">
+							<table class="table mb-0 text-nowrap">
+								<thead>
+									<tr>
+										<th class="border-0">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="checkAll" />
+												<label class="custom-control-label" for="checkAll"></label>
+											</div>
+										</th>
+										<th class="border-0">ID</th>
+										<th class="border-0">Method</th>
+										<th class="border-0">Status</th>
+										<th class="border-0">Amount</th>
+										<th class="border-0">Date</th>
+										<th class="border-0"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="align-middle border-top-0">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="withdrawTwo" />
+												<label class="custom-control-label" for="withdrawTwo"></label>
+											</div>
+										</td>
+										<td class="align-middle border-top-0">#1060</td>
+										<td class="align-middle border-top-0">PayPal</td>
+										<td class="align-middle border-top-0">
+											<span class="badge badge-warning">Pending</span>
+										</td>
+										<td class="align-middle border-top-0">$1200</td>
+										<td class="align-middle border-top-0">Sept 15, 2020</td>
+										<td class="align-middle border-top-0">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="paymentDropdown"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="paymentDropdown">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="withdrawThree" />
+												<label class="custom-control-label" for="withdrawThree"></label>
+											</div>
+										</td>
+										<td class="align-middle">#1038</td>
+										<td class="align-middle">PayPal</td>
+										<td class="align-middle">
+											<span class="badge badge-success">Paid</span>
+										</td>
+										<td class="align-middle">$2000</td>
+										<td class="align-middle">Aug 15, 2020</td>
+										<td class="align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="paymentDropdown1"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="paymentDropdown1">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="withdrawFour" />
+												<label class="custom-control-label" for="withdrawFour"></label>
+											</div>
+										</td>
+										<td class="align-middle">#1016</td>
+										<td class="align-middle">PayPal</td>
+										<td class="align-middle">
+											<span class="badge badge-success">Paid</span>
+										</td>
+										<td class="align-middle">$3590</td>
+										<td class="align-middle">July 15, 2020</td>
+										<td class="align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="paymentDropdown2"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="paymentDropdown2">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="withdrawFive" />
+												<label class="custom-control-label" for="withdrawFive"></label>
+											</div>
+										</td>
+										<td class="align-middle">#1008</td>
+										<td class="align-middle">PayPal</td>
+										<td class="align-middle">
+											<span class="badge badge-success">Paid</span>
+										</td>
+										<td class="align-middle">$4500</td>
+										<td class="align-middle">Aug 15, 2020</td>
+										<td class="align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="paymentDropdown3"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="paymentDropdown3">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="withdrawSix" />
+												<label class="custom-control-label" for="withdrawSix"></label>
+											</div>
+										</td>
+										<td class="align-middle">#1002</td>
+										<td class="align-middle">PayPal</td>
+										<td class="align-middle">
+											<span class="badge badge-success">Paid</span>
+										</td>
+										<td class="align-middle">$4500</td>
+										<td class="align-middle">May 15, 2020</td>
+										<td class="align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="paymentDropdown4"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="paymentDropdown4">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="withdrawSeven" />
+												<label class="custom-control-label" for="withdrawSeven"></label>
+											</div>
+										</td>
+										<td class="align-middle">#982</td>
+										<td class="align-middle">PayPal</td>
+										<td class="align-middle">
+											<span class="badge badge-success">Paid</span>
+										</td>
+										<td class="align-middle">$1232</td>
+										<td class="align-middle">April 15, 2020</td>
+										<td class="align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="paymentDropdown5"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="paymentDropdown5">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="withdrawEight" />
+												<label class="custom-control-label" for="withdrawEight"></label>
+											</div>
+										</td>
+										<td class="align-middle">#970</td>
+										<td class="align-middle">PayPal</td>
+										<td class="align-middle">
+											<span class="badge badge-danger">Cancel</span>
+										</td>
+										<td class="align-middle">$4235</td>
+										<td class="align-middle">March 15, 2020</td>
+										<td class="align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="paymentDropdown6"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="paymentDropdown6">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="withdrawNine" />
+												<label class="custom-control-label" for="withdrawNine"></label>
+											</div>
+										</td>
+										<td class="align-middle">#965</td>
+										<td class="align-middle">PayPal</td>
+										<td class="align-middle">
+											<span class="badge badge-success">Paid</span>
+										</td>
+										<td class="align-middle">$1231</td>
+										<td class="align-middle">Feb 15, 2020</td>
+										<td class="align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="paymentDropdown7"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="paymentDropdown7">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="withdrawTen" />
+												<label class="custom-control-label" for="withdrawTen"></label>
+											</div>
+										</td>
+										<td class="align-middle">#953</td>
+										<td class="align-middle">PayPal</td>
+										<td class="align-middle">
+											<span class="badge badge-success">Paid</span>
+										</td>
+										<td class="align-middle">$5435</td>
+										<td class="align-middle">Jan 15, 2020</td>
+										<td class="align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="paymentDropdown8"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="paymentDropdown8">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="pt-4 pb-4 border-top">
+								<nav>
+									<ul class="pagination justify-content-center mb-0">
+										<li class="page-item disabled">
+											<a class="page-link mx-1 rounded" href="#!" tabindex="-1" aria-disabled="true"><i
+													class="mdi mdi-chevron-left"></i></a>
+										</li>
+										<li class="page-item active">
+											<a class="page-link mx-1 rounded" href="#!">1</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link mx-1 rounded" href="#!">2</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link mx-1 rounded" href="#!">3</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link mx-1 rounded" href="#!"><i class="mdi mdi-chevron-right"></i></a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  <!-- Footer -->
+	@@include("../partials/footer.html")
+
+	<!-- Scripts -->
+	@@include("../partials/scripts.html")
+</body>
+
+</html>

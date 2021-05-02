@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  @@include("../partials/head.html")
+  <title>Filestructure | Geeks - Academy Responsive Admin Template</title>
+
+</head>
+
+<body>
+
+  <!-- Main wrapper -->
+  <div class="docs-main-wrapper">
+    @@include("../partials/doc-navbar.html")
+    <!-- Left sidebar -->
+    @@include("../partials/docs-sidenav.html")
+    <!-- Wrapper  -->
+    <div class="docs-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <!-- Content -->
+            <div class="docs-content">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-7" id="intro">
+                    <h1 class="mb-0">File Structure</h1>
+                    <p class="mb-0">Our theme file structure that looks like this.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="docs-example">
+                <div class="docs-example">
+                  <ul class="text-gray-700">
+                    <li>
+                      <strong>📁 dist</strong> - Generated all files
+                    </li>
+                    <li> <strong>📁 node_modules </strong> - Directory where <code>npm
+                      </code>installs dependencies.</li>
+                    <li>
+                      <strong>📁 src</strong>
+                      <ul>
+                        <li>
+                          <strong>📁 assets</strong>
+                          <ul>
+                            <li>
+                              <strong>📁 css</strong> - Compiled CSS
+                            </li>
+                            <li>
+                              <strong>📁 fonts</strong> - All fonts
+                            </li>
+                            <li>
+                              <strong>📁 images</strong> - Image assets
+                            </li>
+                            <li>
+                              <strong>📁 js</strong> - Javascript source
+                            </li>
+                            <li>
+                              <strong>📁 scss</strong> - source for theme
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <strong>📁 docs</strong> - Documentation
+                        </li>
+                        <li>
+                          <strong>📁 pages</strong> - HTML pages with Subfolder
+                        </li>
+                        <li>
+                          <strong>📁 partials</strong> - HTML partials
+                        </li>
+                        <li>
+                          <strong>📄 index.html </strong>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong>📄 gulpfile.js</strong> - All the build commands
+                    </li>
+                    <li>
+                      <strong>📄 package.json</strong> - List of dependencies and npm information
+                    </li>
+                    <li>
+                      <strong>📄 .gitignore </strong> - Hide all unnecessary files from Git
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+
+  @@include("../partials/scripts.html")
+</body>
+
+</html>

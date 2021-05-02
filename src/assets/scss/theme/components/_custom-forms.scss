@@ -1,0 +1,61 @@
+//
+// Extended from switches
+//
+
+// Switches
+
+.custom-switch {
+  padding-left: 3.5rem;
+  .custom-control-label {
+    &::before {
+      top: 0;
+      height: 1.25rem;
+      border-radius: 0.75rem;
+      left: -3.1rem;
+      width: 2.4rem;
+      pointer-events: all;
+      background-color: $gray-300;
+      border: $gray-300 solid 1px;
+    }
+    &::after {
+      top: 2px;
+      left: -47px;
+      background-color: #fff;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 1rem;
+    }
+  }
+  .custom-control-input:checked ~ .custom-control-label {
+    &::after {
+      top: 2px;
+      left: -42px;
+      background-color: #fff;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 1rem;
+    }
+  }
+}
+
+
+
+// Custom switch for pricing
+
+.custom-switch-info {
+  .custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: $dark-primary;
+    background-color: $dark-primary;
+  }
+  .custom-control-label::after {
+    background-color: $dark-primary;
+  }
+  .custom-control-label::before {
+    background-color: $white;
+    border: $white solid 1px;
+  }
+  .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+  }
+}

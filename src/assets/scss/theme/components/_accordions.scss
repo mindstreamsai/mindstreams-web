@@ -1,0 +1,9 @@
+
+// Accordions
+
+
+.accordion-flush{
+    a[aria-expanded="true"]{
+        color: $primary;
+    }
+}

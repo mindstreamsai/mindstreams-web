@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  @@include("../partials/head.html")
+  <title>Quill Editor js | Geeks - Academy Responsive Admin Template </title>
+
+</head>
+
+<body>
+
+  <!-- Main wrapper -->
+  <div class="docs-main-wrapper">
+    @@include("../partials/doc-navbar.html")
+    <!-- Left sidebar -->
+    @@include("../partials/docs-sidenav.html")
+    <!-- Wrapper  -->
+    <div class="docs-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <!-- Content -->
+            <div class="docs-content">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-7" id="intro">
+                    <h1 class="mb-2">Quill JS</h1>
+                    <p class="lead text-dark"> Quill is powerful rich text editor.
+                    </p>
+                    <a href="https://quilljs.com/docs/quickstart/" target="_blank">Quill
+                      Documentation <i class="fe fe-external-link"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-4" id="usage">
+                    <h2 class="mb-4">Usage</h2>
+                    <h3>CSS</h3>
+                    <p>Copy-paste the stylesheet <code>&lt;link&gt;</code> into your
+                      <code>&lt;head&gt;</code> to load the CSS.</p>
+                    <div class="card p-4 mb-5">
+
+                      <div class="copy-content copy-content-height">
+                        <div class="code-toolbar">
+                          <pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../node_modules/quill/dist/quill.snow.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Js</h3>
+                    <p>Copy-paste the following <code>&lt;script&gt;</code> and
+                      <code>Function</code> near the end of your pages.</p>
+                    <div class="card p-4">
+                      <div class="copy-content copy-content-height">
+                        <div class="code-toolbar">
+                          <pre
+                            class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../node_modules/quill/dist/quill.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card p-4 mt-2">
+                      <div class="copy-content copy-content-height">
+                        <div class="code-toolbar">
+                          <pre
+                            class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/js/main.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-4" id="basic">
+                    <h2 class="mb-0">Basic</h2>
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-quillEditor" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-quillEditor-design-tab" data-toggle="pill"
+                          href="#pills-quillEditor-design" role="tab" aria-controls="pills-quillEditor-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-quillEditor-html-tab" data-toggle="pill"
+                          href="#pills-quillEditor-html" role="tab" aria-controls="pills-quillEditor-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content -->
+                    <div class="tab-content p-4" id="pills-tabContent-quillEditor">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-quillEditor-design"
+                        role="tabpanel" aria-labelledby="pills-quillEditor-design-tab">
+                        <div id="editor">
+                          <p>Hello World!</p>
+                          <p>Some initial <strong>bold</strong> text</p>
+                          <p><br></p>
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-quillEditor-html" role="tabpanel"
+                        aria-labelledby="pills-quillEditor-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>editor<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Hello World!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Some initial <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>bold<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span> text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                                                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                                          </code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12 d-none d-xl-block position-fixed right-0">
+            <!-- Sidebar nav fixed -->
+            <div class="sidebar-nav-fixed">
+              <ul class="list-unstyled">
+                <li><a href="#intro" class="active">Introduction</a></li>
+                <li><a href="#usage">How to Use</a></li>
+                <li><a href="#basic">Basic</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  @@include("../partials/scripts.html")
+
+
+</body>
+
+</html>

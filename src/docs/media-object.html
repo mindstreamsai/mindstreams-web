@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  @@include("../partials/head.html")
+  <title>Media Object | Geeks - Academy Responsive Admin Template </title>
+
+</head>
+
+<body>
+
+  <!-- Main wrapper -->
+  <div class="docs-main-wrapper">
+    @@include("../partials/doc-navbar.html")
+    <!-- left sidebar -->
+    @@include("../partials/docs-sidenav.html")
+    <!-- wrapper  -->
+    <div class="docs-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <!-- Content -->
+            <div class="docs-content">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-7" id="intro">
+                    <h1 class="mb-2">Media object</h1>
+                    <p class="mb-0 lead text-dark">Documentation and examples for Bootstrap’s media object to construct
+                      highly repetitive components like blog comments, tweets, and the like.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- media-basic -->
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div id="example" class="mb-4">
+                    <p>The <a href="#">media object</a> helps build complex and repetitive components where some media
+                      is positioned alongside content that doesn’t wrap around said media. Plus, it does this with only
+                      two required classes
+                      thanks to flexbox.</p>
+                    <p>Below is an example of a single media object. Only two classes are required—the wrapping <code
+                        class="highlighter-rouge">.media</code> and the
+                      <code class="highlighter-rouge">.media-body</code> around your content. Optional padding and
+                      margin can be controlled through <a href="/docs/4.3/utilities/spacing/">spacing utilities</a>.</p>
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-media-basic" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-media-basic-design-tab" data-toggle="pill"
+                          href="#pills-media-basic-design" role="tab" aria-controls="pills-media-basic-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-media-basic-html-tab" data-toggle="pill"
+                          href="#pills-media-basic-html" role="tab" aria-controls="pills-media-basic-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content -->
+                    <div class="tab-content p-4" id="pills-tabContent-media-basic">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-media-basic-design"
+                        role="tabpanel" aria-labelledby="pills-media-basic-design-tab">
+                        <div class="media">
+                          <img src="../assets/images/placeholder/placeholder-img.jpg" class="mr-3 rounded" alt="...">
+                          <div class="media-body">
+                            <h5 class="mt-0">Media heading</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-media-basic-html" role="tabpanel"
+                        aria-labelledby="pills-media-basic-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/images/placeholder/placeholder-img.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mr-3<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>...<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Media heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- media-basic -->
+              <hr class="mt-5 mb-5">
+              <!-- Nesting -->
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div id="nesting" class="mb-4">
+                    <h2>Nesting</h2>
+                    <p>Media objects can be infinitely nested, though we suggest you stop at some point. Place nested
+                      <code class="highlighter-rouge">.media</code> within the
+                      <code class="highlighter-rouge">.media-body</code> of a parent media object.
+                    </p>
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-nesting" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-nesting-design-tab" data-toggle="pill"
+                          href="#pills-nesting-design" role="tab" aria-controls="pills-nesting-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-nesting-html-tab" data-toggle="pill" href="#pills-nesting-html"
+                          role="tab" aria-controls="pills-nesting-html" aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content -->
+                    <div class="tab-content p-4" id="pills-tabContent-nesting">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-nesting-design"
+                        role="tabpanel" aria-labelledby="pills-nesting-design-tab">
+                        <div class="media">
+                          <img src="../assets/images/placeholder/placeholder-img.jpg" class="mr-3 rounded" alt="...">
+                          <div class="media-body">
+                            <h5 class="mt-0">Media heading</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            <div class="media mt-3">
+                              <a class="mr-3" href="#">
+                                <img src="../assets/images/placeholder/placeholder-img.jpg" class="mr-3 rounded" alt="...">
+                              </a>
+                              <div class="media-body">
+                                <h5 class="mt-0">Media heading</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                                condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-nesting-html" role="tabpanel"
+                        aria-labelledby="pills-nesting-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/images/placeholder/placeholder-img.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mr-3<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>...<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Media heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media mt-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mr-3<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/images/placeholder/placeholder-img.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mr-3<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>...<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Media heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Nesting -->
+              <hr class="mb-5 mt-5">
+              <!-- Alignment -->
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div id="alignment" class="mb-4">
+                    <h2>Alignment</h2>
+                    <p>Media in a media object can be aligned with flexbox utilities to the top (default), middle, or
+                      end of your <code class="highlighter-rouge">.media-body</code> content.</p>
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-top-alignment" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-top-alignment-design-tab" data-toggle="pill"
+                          href="#pills-top-alignment-design" role="tab" aria-controls="pills-top-alignment-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-top-alignment-html-tab" data-toggle="pill"
+                          href="#pills-top-alignment-html" role="tab" aria-controls="pills-top-alignment-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content -->
+                    <div class="tab-content p-4" id="pills-tabContent-top-alignment">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-top-alignment-design"
+                        role="tabpanel" aria-labelledby="pills-top-alignment-design-tab">
+                        <div class="media">
+                          <img src="../assets/images/placeholder/placeholder-img.jpg" class="align-self-start mr-3 rounded"
+                            alt="...">
+                          <div class="media-body">
+                            <h5 class="mt-0">Top-aligned media</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                              sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                              condimentum nunc ac nisi vulputate
+                              fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
+                              natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-top-alignment-html" role="tabpanel"
+                        aria-labelledby="pills-top-alignment-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/images/placeholder/placeholder-img.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>align-self-start mr-3<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>...<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Top-aligned media<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> </code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Alignment -->
+              <!-- Center-aligned media -->
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
+                  <!-- Card -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-center-aligned" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-center-aligned-design-tab" data-toggle="pill"
+                          href="#pills-center-aligned-design" role="tab" aria-controls="pills-center-aligned-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-center-aligned-html-tab" data-toggle="pill"
+                          href="#pills-center-aligned-html" role="tab" aria-controls="pills-center-aligned-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content -->
+                    <div class="tab-content p-4" id="pills-tabContent-center-aligned">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-center-aligned-design"
+                        role="tabpanel" aria-labelledby="pills-center-aligned-design-tab">
+                        <div class="media">
+                          <img src="../assets/images/placeholder/placeholder-img.jpg" class="align-self-center mr-3 rounded"
+                            alt="...">
+                          <div class="media-body">
+                            <h5 class="mt-0">Center-aligned media</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                              sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                              condimentum nunc ac nisi vulputate
+                              fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.
+                              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-center-aligned-html" role="tabpanel"
+                        aria-labelledby="pills-center-aligned-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/images/placeholder/placeholder-img.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>align-self-center mr-3<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>...<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Center-aligned media<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mb-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Center-aligned media -->
+              <!-- Bottom-aligned media -->
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
+                  <!-- Card -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-bottom-aligned" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-bottom-aligned-design-tab" data-toggle="pill"
+                          href="#pills-bottom-aligned-design" role="tab" aria-controls="pills-bottom-aligned-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-bottom-aligned-html-tab" data-toggle="pill"
+                          href="#pills-bottom-aligned-html" role="tab" aria-controls="pills-bottom-aligned-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content -->
+                    <div class="tab-content p-4" id="pills-tabContent-bottom-aligned">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-bottom-aligned-design"
+                        role="tabpanel" aria-labelledby="pills-bottom-aligned-design-tab">
+                        <div class="media">
+                          <img src="../assets/images/placeholder/placeholder-img.jpg" class="align-self-end mr-3 rounded" alt="...">
+                          <div class="media-body">
+                            <h5 class="mt-0">Bottom-aligned media</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                              sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                              condimentum nunc ac nisi vulputate
+                              fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.
+                              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-bottom-aligned-html" role="tabpanel"
+                        aria-labelledby="pills-bottom-aligned-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/images/placeholder/placeholder-img.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>align-self-end mr-3 rounded<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>...<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Bottom-aligned media<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+                                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mb-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Bottom-aligned media -->
+              <hr class="mb-5 mt-5">
+              <!-- Order -->
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div id="media-order" class="mb-4">
+                    <h2>Order</h2>
+                    <p>Change the order of content in media objects by modifying the HTML itself, or by adding some
+                      custom flexbox CSS to set the <code class="highlighter-rouge">order</code> property (to an integer
+                      of your choosing).
+                    </p>
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-order" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-order-design-tab" data-toggle="pill"
+                          href="#pills-order-design" role="tab" aria-controls="pills-order-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-order-html-tab" data-toggle="pill" href="#pills-order-html"
+                          role="tab" aria-controls="pills-order-html" aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content -->
+                    <div class="tab-content p-4" id="pills-tabContent-order">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-order-design" role="tabpanel"
+                        aria-labelledby="pills-order-design-tab">
+                        <div class="media">
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">Media object</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                          </div>
+                          <img src="../assets/images/placeholder/placeholder-img.jpg" class="ml-3 rounded" alt="...">
+                        </div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-order-html" role="tabpanel"
+                        aria-labelledby="pills-order-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-0 mb-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Media object<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/images/placeholder/placeholder-img.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ml-3<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>...<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Order -->
+              <hr class="mb-5 mt-5">
+              <!-- Media list -->
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div id="media-list" class="mb-4">
+                    <h2>Media list</h2>
+                    <p>Because the media object has so few structural requirements, you can also use these classes on
+                      list HTML elements. On your <code class="highlighter-rouge">&lt;ul&gt;</code> or <code
+                        class="highlighter-rouge">&lt;ol&gt;</code>,
+                      add the <code class="highlighter-rouge">.list-unstyled</code> to remove any browser default list
+                      styles, and then apply <code class="highlighter-rouge">.media</code> to your <code
+                        class="highlighter-rouge">&lt;li&gt;</code>s.
+                      As always, use spacing utilities wherever needed to fine tune.</p>
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-media-list" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-media-list-design-tab" data-toggle="pill"
+                          href="#pills-media-list-design" role="tab" aria-controls="pills-media-list-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-media-list-html-tab" data-toggle="pill"
+                          href="#pills-media-list-html" role="tab" aria-controls="pills-media-list-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content -->
+                    <div class="tab-content p-4" id="pills-tabContent-media-list">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-media-list-design"
+                        role="tabpanel" aria-labelledby="pills-media-list-design-tab">
+                        <ul class="list-unstyled">
+                          <li class="media">
+                            <img src="../assets/images/placeholder/placeholder-img.jpg" class="mr-3 rounded" alt="">
+                            <div class="media-body">
+                              <h5 class="mt-0 mb-1">List-based media object</h5>
+                              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                              sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                              condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                          </li>
+                          <li class="media my-4">
+                            <img src="../assets/images/placeholder/placeholder-img.jpg" class="mr-3 rounded" alt="">
+                            <div class="media-body">
+                              <h5 class="mt-0 mb-1">List-based media object</h5>
+                              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                              sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                              condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                          </li>
+                          <li class="media">
+                            <img src="../assets/images/placeholder/placeholder-img.jpg" class="mr-3 rounded" alt="">
+                            <div class="media-body">
+                              <h5 class="mt-0 mb-1">List-based media object</h5>
+                              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                              sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                              condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-media-list-html" role="tabpanel"
+                        aria-labelledby="pills-media-list-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>list-unstyled<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/images/placeholder/placeholder-img.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mr-3 rounded<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-0 mb-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>List-based media object<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+                                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media my-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/images/placeholder/placeholder-img.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mr-3 rounded<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-0 mb-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>List-based media object<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+                                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/images/placeholder/placeholder-img.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mr-3 rounded<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>media-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-0 mb-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>List-based media object<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+                                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Media list -->
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12  d-none d-xl-block position-fixed right-0">
+            <!-- Sidebar nav fixed -->
+            <div class="sidebar-nav-fixed">
+              <ul class="list-unstyled">
+                <li><a href="#intro" class="active">Introduction</a></li>
+                <li><a href="#example">Example</a></li>
+                <li><a href="#nesting">Nesting</a></li>
+                <li><a href="#alignment">Alignment</a></li>
+                <li><a href="#media-order">Order</a></li>
+                <li><a href="#media-list">Media list</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scripts -->
+  @@include("../partials/scripts.html")
+</body>
+
+</html>

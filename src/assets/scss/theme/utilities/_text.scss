@@ -1,0 +1,53 @@
+//
+// Extended from bootstrap
+//
+// Text scss
+.text-truncate-line-2 {
+    @include text-truncate-line-2();
+}
+
+// Weight and italics
+.font-weight-medium {
+    font-weight: $font-weight-medium !important;
+}
+
+// Line height
+.lh-1 {
+    line-height: $line-height-1;
+}
+
+.lh-2 {
+    line-height: $line-height-2;
+}
+
+.lh-base {
+    line-height: $line-height-base;
+}
+
+.lh-sm {
+    line-height: $line-height-sm;
+}
+
+.lh-lg {
+    line-height: $line-height-lg;
+}
+
+// Text Inherit
+.text-inherit {
+    color: $dark;
+}
+
+// Muted hover
+a.text-muted:hover {
+    color: $primary !important;
+}
+
+// Primary hover
+a:hover .text-primary-hover {
+    color: $primary !important;
+}
+
+// disableClick
+.disableClick {
+    pointer-events: none;
+}

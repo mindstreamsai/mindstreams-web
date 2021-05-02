@@ -1,0 +1,10 @@
+//
+// Extended from Bootstrap
+//
+
+// Text truncate
+
+@mixin text-truncate-line-2() {
+  overflow : hidden;
+  max-height: 3rem;
+}

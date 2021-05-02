@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include("../partials/head.html")
+  <title>Bootstrap Select | Geeks - Academy Responsive Admin Template </title>
+
+</head>
+
+<body>
+
+  <!-- Main wrapper -->
+  <div class="docs-main-wrapper">
+    @@include("../partials/doc-navbar.html")
+    <!-- Left sidebar -->
+    @@include("../partials/docs-sidenav.html")
+    <!-- Wrapper  -->
+    <div class="docs-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <!-- Content  -->
+            <div class="docs-content">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-6" id="intro">
+                    <h1 class="mb-2">Bootstrap Select</h1>
+                    <p class="lead text-dark">Bootstrap-select requires jQuery v1.9.1+, Bootstrap’s dropdown.js
+                      component, and Bootstrap's CSS. If you're not already using Bootstrap in your project, a
+                      precompiled version of the Bootstrap v3.4.1 minimum requirements can be downloaded here. If using
+                      bootstrap-select with Bootstrap v4+, you'll also need Popper.js. For all of Bootstrap v4's
+                      requirements, see Getting started. A precompiled version of the requirements will be made
+                      available in an upcoming release of bootstrap-select.
+                    </p>
+                    <a href="https://github.com/snapappointments/bootstrap-select/" target="_blank">Bootstrap Select
+                      Documentation <i class="fe fe-external-link"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-4" id="usage">
+                    <h2 class="mb-4">Usage</h2>
+                    <h3>CSS</h3>
+                    <p>Copy-paste the stylesheet <code>&lt;link&gt;</code> into your
+                      <code>&lt;head&gt;</code> to load the CSS.</p>
+                    <div class="card p-4 mb-5">
+                      <div class="copy-content copy-content-height">
+                        <div class="code-toolbar">
+                          <pre
+                            class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Js</h3>
+                    <p>Copy-paste the following <code>&lt;script&gt;</code> and
+                      <code>Function</code> near the end of your pages.</p>
+                    <div class="card p-4">
+                      <div class="copy-content copy-content-height">
+                        <div class="code-toolbar">
+                          <pre
+                            class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../node_modules/bootstrap-select/dist/js/bootstrap-select.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-4" id="basic">
+                    <h2 class="mb-0">Basic examples</h2>
+                  </div>
+                  <!-- Card  -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-bootstrapSelect" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-bootstrapSelect-design-tab" data-toggle="pill"
+                          href="#pills-bootstrapSelect-design" role="tab" aria-controls="pills-bootstrapSelect-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-bootstrapSelect-html-tab" data-toggle="pill"
+                          href="#pills-bootstrapSelect-html" role="tab" aria-controls="pills-bootstrapSelect-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content  -->
+                    <div class="tab-content p-4" id="pills-tabContent-bootstrapSelect">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-bootstrapSelect-design"
+                        role="tabpanel" aria-labelledby="pills-bootstrapSelect-design-tab">
+                        <!-- bootstrap select Select -->
+                        <form>
+                          <div class="form-group col-12 col-md-4">
+                            <label class="form-label">Select Option </label>
+                            <select class="selectpicker" data-width="100%">
+                              <option value="">Select Menu</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-bootstrapSelect-html" role="tabpanel"
+                        aria-labelledby="pills-bootstrapSelect-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"><span class="token comment">&lt;!-- bootstrap select Select --&gt;</span>
+                                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span>
+                                                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-group col-12 col-md-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-label<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Select Option <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+                                                                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>selectpicker<span class="token punctuation">"</span></span> <span class="token attr-name">data-width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>100%<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                                     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Select Menu<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+                                                                     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+                                                                     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+                                                                     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+                                                                     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+                                                                     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>5<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+                                                                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+                                                               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                                                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12 d-none d-xl-block position-fixed right-0">
+            <!-- Sidebar nav fixed  -->
+            <div class="sidebar-nav-fixed">
+              <ul class="list-unstyled">
+                <li><a href="#intro" class="active">Introduction</a></li>
+                <li><a href="#usage">How to Use</a></li>
+                <li><a href="#basic">Basic</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+
+  @@include("../partials/scripts.html")
+
+
+</body>
+
+</html>

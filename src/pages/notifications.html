@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	@@include("../partials/head.html")
+	<title>Notifications | Geeks - Academy Admin Template</title>
+</head>
+
+<body>
+	<!-- Page Content -->
+	@@include("../partials/navbar.html",{ "classList": "navbar-default" })
+	<div class="pt-5 pb-4">
+		<div class="container">
+			<div class="row align-items-center">
+				<!-- User info -->
+				<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+						<!-- Bg -->
+					<div class="pt-16 rounded-top" style="
+								background: url(../assets/images/background/profile-bg.jpg) no-repeat;
+								background-size: cover;
+							"></div>
+					<div
+						class="d-flex align-items-end justify-content-between bg-white px-4 pt-2 pb-4 rounded-none rounded-bottom shadow-sm">
+						<div class="d-flex align-items-center">
+							<div class="mr-2 position-relative d-flex justify-content-end align-items-end mt-n5">
+								<img src="../assets/images/avatar/avatar-3.jpg" class="avatar-xl rounded-circle border-width-4 border-white"
+									alt="" />
+							</div>
+							<div class="lh-1">
+								<h2 class="mb-0">
+									Stella Flores
+									<a href="#!" class="text-decoration-none" data-toggle="tooltip" data-placement="top" title="Beginner">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE"></rect>
+											<rect x="7" y="5" width="2" height="9" rx="1" fill="#DBD8E9"></rect>
+											<rect x="11" y="2" width="2" height="12" rx="1" fill="#DBD8E9"></rect>
+										</svg>
+									</a>
+								</h2>
+								<p class="mb-0 d-block">@stellaflores</p>
+							</div>
+						</div>
+						<div>
+							<a href="dashboard-student.html" class="btn btn-outline-primary btn-sm d-none d-md-block">Go to
+								Dashboard</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	<!-- Content -->
+			<div class="row mt-0 mt-md-4">
+				<div class="col-lg-3 col-md-4 col-12">
+					<!-- Side navbar -->
+					<nav class="navbar navbar-expand-md navbar-light shadow-sm mb-4 mb-lg-0 sidenav">
+						<!-- Menu -->
+						<a class="d-xl-none d-lg-none d-md-none text-inherit font-weight-bold" href="#!">Menu</a>
+						<!-- Button -->
+						<button class="navbar-toggler d-md-none icon-shape icon-sm rounded bg-primary text-light" type="button"
+							data-toggle="collapse" data-target="#sidenav" aria-controls="sidenav" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="fe fe-menu"></span>
+						</button>
+						<!-- Collapse navbar -->
+						<div class="collapse navbar-collapse" id="sidenav">
+							<div class="navbar-nav flex-column">
+								<!-- Navbar header -->
+								<span class="navbar-header">Subscription</span>
+								<ul class="list-unstyled ml-n2 mb-4">
+									<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="student-subscriptions.html"><i class="fe fe-calendar nav-icon"></i>My
+											Subscriptions</a>
+									</li>
+									<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="billing-info.html"><i class="fe fe-credit-card nav-icon"></i>Billing
+											Info</a>
+									</li>
+									<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="payment-method.html"><i class="fe fe-credit-card nav-icon"></i>Payment</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="invoice.html"><i class="fe fe-clipboard nav-icon"></i>Invoice</a>
+									</li>
+								</ul>
+								<!-- Navbar header -->
+								<span class="navbar-header">Account Settings</span>
+								<ul class="list-unstyled ml-n2 mb-0">
+									<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="profile-edit.html"><i class="fe fe-settings nav-icon"></i>Edit Profile</a>
+									</li>
+									<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="security.html"><i class="fe fe-user nav-icon"></i>Security</a>
+									</li>
+									<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="social-profile.html"><i class="fe fe-refresh-cw nav-icon"></i>Social
+											Profiles</a>
+									</li>
+									<!-- Nav item -->
+									<li class="nav-item active">
+										<a class="nav-link" href="notifications.html"><i class="fe fe-bell nav-icon"></i>Notifications</a>
+									</li>
+									<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="profile-privacy.html"><i class="fe fe-lock nav-icon"></i>Profile
+											Privacy</a>
+									</li>
+									<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="delete-profile.html"><i class="fe fe-trash nav-icon"></i>Delete
+											Profile</a>
+									</li>
+										<!-- Nav item -->
+										<li class="nav-item">
+											<a class="nav-link " href="linked-accounts.html"><i class="fe fe-user nav-icon"></i>Linked Accounts</a>
+										</li>
+									<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="../index.html"><i class="fe fe-power nav-icon"></i>Sign Out</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<!-- Content -->
+				<div class="col-lg-9 col-md-8 col-12">
+					<!-- Card -->
+					<div class="card">
+						<!-- Card header -->
+						<div class="card-header d-flex justify-content-between align-items-center">
+							<div>
+								<!-- Notification -->
+								<h3 class="mb-0">Notifications</h3>
+								<p class="mb-0">
+									You will get only notification what have enabled.
+								</p>
+							</div>
+							<div>
+								<div class="custom-control custom-switch">
+									<input class="custom-control-input" type="checkbox" id="checkAll" checked="" />
+									<label class="custom-control-label" for="checkAll"></label>
+								</div>
+							</div>
+						</div>
+						<!-- Card body -->
+						<div class="card-body">
+							<div class="mb-5">
+								<h4 class="mb-0">Security Alerts</h4>
+								<p>
+									You will get only those email notification what you want.
+								</p>
+								<!-- List group -->
+								<ul class="list-group list-group-flush">
+										<!-- List group item -->
+									<li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+										<div>Email me whenever encounter unusual activity</div>
+										<div>
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input" id="switchOne" checked />
+												<label class="custom-control-label" for="switchOne"></label>
+											</div>
+										</div>
+									</li>
+										<!-- List group item -->
+									<li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+										<div>Email me if new browser is used to sign in</div>
+										<div>
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input" id="switchTwo" />
+												<label class="custom-control-label" for="switchTwo"></label>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="mb-5">
+								<h4 class="mb-0">News</h4>
+								<p>
+									You will get only those email notification what you want.
+								</p>
+								<!-- List group-->
+								<ul class="list-group list-group-flush">
+										<!-- List group item -->
+									<li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+										<div>Notify me by email about sales and latest news</div>
+										<div>
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input" id="switchThree" checked />
+												<label class="custom-control-label" for="switchThree"></label>
+											</div>
+										</div>
+									</li>
+									<!-- List group item -->
+									<li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+										<div>Email me about new features and updates</div>
+										<div>
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input" id="switchFour" />
+												<label class="custom-control-label" for="switchFour"></label>
+											</div>
+										</div>
+									</li>
+									<!-- List group item -->
+									<li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+										<div>Email me about tips on using account</div>
+										<div>
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input" id="switchFive" checked />
+												<label class="custom-control-label" for="switchFive"></label>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<!-- Content -->
+								<h4 class="mb-0">Courses</h4>
+								<p>
+									You will get only those email notification what you want.
+								</p>
+									<!-- List group -->
+								<ul class="list-group list-group-flush mb-4">
+										<!-- List group item -->
+									<li class="list-group-item d-flex justify-content-between px-0">
+										<div>
+											<h5 class="mb-0">Updates from Classes You're Taking</h5>
+											<span>Announcements, events, and tips and tricks.</span>
+										</div>
+										<div>
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input" id="switchSix" checked />
+												<label class="custom-control-label" for="switchSix"></label>
+											</div>
+										</div>
+									</li>
+										<!-- List group item -->
+									<li class="list-group-item d-flex justify-content-between px-0">
+										<div>
+											<h5 class="mb-0">Updates from Teacher Discussions</h5>
+											<span>Public Discussions outside of a class that teachers
+												share to all of their followers.</span>
+										</div>
+										<div>
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input" id="switchSeven" />
+												<label class="custom-control-label" for="switchSeven"></label>
+											</div>
+										</div>
+									</li>
+										<!-- List group item -->
+									<li class="list-group-item d-flex justify-content-between px-0">
+										<div>
+											<h5 class="mb-0">Personalized Class Recommendations</h5>
+											<span>Weekly recommendations tailored to your
+												interests.</span>
+										</div>
+										<div>
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input" id="switchEight" />
+												<label class="custom-control-label" for="switchEight"></label>
+											</div>
+										</div>
+									</li>
+										<!-- List group item -->
+									<li class="list-group-item d-flex justify-content-between px-0">
+										<div>
+											<h5 class="mb-0">Featured content</h5>
+											<span>Tips on Courses and dashboard usage, workshop, books,
+												tutorials and many insightful articles.</span>
+										</div>
+										<div>
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input" id="switchNine" />
+												<label class="custom-control-label" for="switchNine"></label>
+											</div>
+										</div>
+									</li>
+										<!-- List group item -->
+									<li class="list-group-item d-flex justify-content-between px-0">
+										<div>
+											<h5 class="mb-0">Product updates</h5>
+											<span>We'll send you a newsletter announcing essential
+												product updates in CoursesUI.</span>
+										</div>
+										<div>
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input" id="switchTen" />
+												<label class="custom-control-label" for="switchTen"></label>
+											</div>
+										</div>
+									</li>
+									<!-- List group item -->
+									<li class="list-group-item d-flex justify-content-between px-0">
+										<div>
+											<h5 class="mb-0">Events and offers</h5>
+											<span>Announcing promos and upcoming events,such as Ask Me
+												Anything sessions and webinars.</span>
+										</div>
+										<div>
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input" id="switchEleven" />
+												<label class="custom-control-label" for="switchEleven"></label>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<!-- Short note -->
+								<a href="#!" class="text-danger mb-2 d-block">
+									<u>Unsubscribe from all of the above</u>
+								</a>
+								<p class="mb-0">
+									Please note: you'll still receive important administrative
+									emails,such as password resets.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <!-- Footer -->
+	@@include("../partials/footer.html")
+
+	<!-- Scripts -->
+	@@include("../partials/scripts.html")
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include("../partials/head.html")
+  <title>Breadcrumb | Geeks - Academy Responsive Admin Template</title>
+
+</head>
+
+<body>
+
+  <!-- Main wrapper -->
+  <div class="docs-main-wrapper">
+    @@include("../partials/doc-navbar.html")
+    <!-- Left sidebar -->
+    @@include("../partials/docs-sidenav.html")
+    <!-- Wrapper  -->
+    <div class="docs-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <!-- Content -->
+            <div class="docs-content">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-7" id="intro">
+                    <h1 class="mb-2">Breadcrumb</h1>
+                    <p class="mb-0 lead text-dark">Indicate the current page’s location within a navigational hierarchy
+                      that automatically adds separators via CSS.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Breadcrumb -->
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div id="breadcrumb" class="mb-4">
+                    <h2>Breadcrumb</h2>
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-breadcrumb" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-breadcrumb-design-tab" data-toggle="pill"
+                          href="#pills-breadcrumb-design" role="tab" aria-controls="pills-breadcrumb-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-breadcrumb-html-tab" data-toggle="pill"
+                          href="#pills-breadcrumb-html" role="tab" aria-controls="pills-breadcrumb-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content -->
+                    <div class="tab-content p-4" id="pills-tabContent-breadcrumb">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-breadcrumb-design"
+                        role="tabpanel" aria-labelledby="pills-breadcrumb-design-tab">
+                        <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Home</li>
+                          </ol>
+                        </nav>
+                        <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Library
+                            </li>
+                          </ol>
+                        </nav>
+                        <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Library</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                          </ol>
+                        </nav>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-breadcrumb-html" role="tabpanel"
+                        aria-labelledby="pills-breadcrumb-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre
+                              class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>breadcrumb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>breadcrumb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>breadcrumb-item active<span class="token punctuation">"</span></span> <span class="token attr-name">aria-current</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>breadcrumb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>breadcrumb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>breadcrumb-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>breadcrumb-item active<span class="token punctuation">"</span></span> <span class="token attr-name">aria-current</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Library<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>breadcrumb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>breadcrumb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>breadcrumb-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>breadcrumb-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Library<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>breadcrumb-item active<span class="token punctuation">"</span></span> <span class="token attr-name">aria-current</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Data<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-6 mb-3">
+                    <h2>
+                      Changing the separator</h2>
+                    <p>Separators are automatically added in CSS through <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code>::before</code></a> and
+                      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code>content</code></a>.
+                      They can be changed by changing <code>$breadcrumb-divider</code>. The <a
+                        href="https://sass-lang.com/documentation/modules/string#quote">quote</a> function is needed to
+                      generate the quotes around a string, so
+                      if you want
+                      <code>&gt;</code> as separator, you can use this:</p>
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="copy-content copy-content-height">
+                        <div class="code-toolbar">
+                          <pre
+                            class="language-scss"><code class="language-scss"><span class="token property"><span class="token variable">$breadcrumb-divider</span></span><span class="token punctuation">:</span> <span class="token function">quote</span><span class="token punctuation">(</span><span class="token string">"&gt;"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-3">
+                    <p>It’s also possible to use a <strong>base64 embedded SVG icon:</strong></p>
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="copy-content copy-content-height">
+                        <div class="code-toolbar">
+
+                          <pre
+                            class="language-scss"><code class="language-scss"><span class="token variable-line"><span class="token variable">$breadcrumb-divider</span><span class="token punctuation">:</span> </span><span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+<span class="token punctuation">)</span></span><span class="token selector">;</span></code></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-3">
+                    <p>The separator can be removed by setting <code>$breadcrumb-divider</code> to
+                      <code>none</code>:</p>
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="copy-content copy-content-height">
+                        <div class="code-toolbar">
+                          <pre
+                            class="language-scss"><code class="language-scss"><span class="token property"><span class="token variable">$breadcrumb-divider</span></span><span class="token punctuation">:</span> none<span class="token punctuation">;</span></code></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- breadcrumb -->
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12  d-none d-xl-block position-fixed right-0">
+            <!-- Sidebar nav fixed -->
+            <div class="sidebar-nav-fixed">
+              <ul class="list-unstyled">
+                <li><a href="#intro" class="active">Introduction</a></li>
+                <li><a href="#breadcrumb">Breadcrumb</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  @@include("../partials/scripts.html")
+
+</body>
+
+</html>

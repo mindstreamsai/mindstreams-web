@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include("../partials/head.html")
+  <title>Shadows | Geeks - Academy Responsive Admin Template</title>
+
+</head>
+
+<body>
+
+  <!-- Main wrapper -->
+  <div class="docs-main-wrapper">
+    @@include("../partials/doc-navbar.html")
+    <!-- left sidebar -->
+    @@include("../partials/docs-sidenav.html")
+    <!-- Wrapper  -->
+    <div class="docs-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+            <!-- Content -->
+            <div class="docs-content">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-7" >
+                    <h1 class="mb-2">Shadows</h1>
+                    <p class="mb-0 lead text-dark">Add or remove shadows to elements with box-shadow utilities.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Flush -->
+              <div class="row ">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div  class="mb-4">
+                    <h3>Example </h3>
+                    <p class="mb-0">While shadows on components are disabled by default in Bootstrap and can be enabled via <code>$enable-shadows</code>, you can also quickly add or remove a shadow with our <code>box-shadow</code> utility classes. Includes support for <code>.shadow-none</code> and three default sizes (which have associated variables to match).</p>
+
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <ul class="nav nav-line-bottom " id="pills-tab-shadows" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-shadows-design-tab" data-toggle="pill"
+                          href="#pills-shadows-design" role="tab" aria-controls="pills-shadows-design"
+                          aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-shadows-html-tab" data-toggle="pill"
+                          href="#pills-shadows-html" role="tab" aria-controls="pills-shadows-html"
+                          aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content -->
+                    <div class="tab-content p-4" id="pills-tabContent-shadows">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-shadows-design"
+                        role="tabpanel" aria-labelledby="pills-shadows-design-tab">
+                        <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+                        <div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>
+                        <div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
+                        <div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-shadows-html" role="tabpanel"
+                        aria-labelledby="pills-shadows-html-tab">
+                        <div class="copy-content copy-content-height">
+                          <div class="code-toolbar">
+                            <pre class=" language-markup"><code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shadow-none p-3 mb-5 bg-light rounded<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>No shadow<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shadow-sm p-3 mb-5 bg-white rounded<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Small shadow<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shadow p-3 mb-5 bg-white rounded<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Regular shadow<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shadow-lg p-3 mb-5 bg-white rounded<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Larger shadow<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Shadows -->
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+
+  @@include("../partials/scripts.html")
+</body>
+
+</html>

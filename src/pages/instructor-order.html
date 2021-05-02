@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	@@include("../partials/head.html")
+	<title>Instructor Order | Geeks - Academy Admin Template</title>
+</head>
+
+<body>
+	@@include("../partials/navbar.html",{ "classList": "navbar-default" })
+	<!-- Page Content -->
+	<div class="pt-5 pb-5">
+		<div class="container">
+				<!-- User info -->
+			<div class="row">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+					<!-- Bg -->
+					<div class="pt-16 rounded-top" style="
+								background: url(../assets/images/background/profile-bg.jpg) no-repeat;
+								background-size: cover;
+							"></div>
+					<div
+						class="d-flex align-items-end justify-content-between bg-white px-4 pt-2 pb-4 rounded-none rounded-bottom shadow-sm">
+						<div class="d-flex align-items-center">
+							<div class="mr-2 position-relative d-flex justify-content-end align-items-end mt-n5">
+								<img src="../assets/images/avatar/avatar-1.jpg" class="avatar-xl rounded-circle border-width-4 border-white position-relative"
+									alt="" />
+								<a href="#!" class="position-absolute top-0 right-0" data-toggle="tooltip" data-placement="top" title=""
+									data-original-title="Verified">
+									<img src="../assets/images/svg/checked-mark.svg" alt="" height="30" width="30" />
+								</a>
+							</div>
+							<div class="lh-1">
+								<h2 class="mb-0">Jenny Wilson</h2>
+								<p class="mb-0 d-block">@Jennywilson</p>
+							</div>
+						</div>
+						<div>
+							<a href="add-course.html" class="btn btn-primary btn-sm d-none d-md-block">Create New Course</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<!-- Content -->
+
+			<div class="row mt-0 mt-md-4">
+				<div class="col-lg-3 col-md-4 col-12">
+					<!-- Navbar -->
+					<nav class="navbar navbar-expand-md navbar-light shadow-sm mb-4 mb-lg-0 sidenav">
+						<!-- Menu -->
+						<a class="d-xl-none d-lg-none d-md-none text-inherit font-weight-bold" href="#!">Menu</a>
+					   <!-- Button -->
+						<button class="navbar-toggler d-md-none icon-shape icon-sm rounded bg-primary text-light" type="button"
+							data-toggle="collapse" data-target="#sidenav" aria-controls="sidenav" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="fe fe-menu"></span>
+						</button>
+						<!-- Collapse navbar -->
+						<div class="collapse navbar-collapse" id="sidenav">
+							<div class="navbar-nav flex-column">
+									<!-- Navbar header -->
+								<span class="navbar-header">Dashboard</span>
+								<ul class="list-unstyled ml-n2 mb-4">
+									<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="dashboard-instructor.html"><i class="fe fe-home nav-icon"></i>My
+											Dashboard</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="instructor-courses.html"><i class="fe fe-book nav-icon"></i>My Courses</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="instructor-reviews.html"><i class="fe fe-star nav-icon"></i>Reviews</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="instructor-earning.html"><i
+												class="fe fe-pie-chart nav-icon"></i>Earnings</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item active">
+										<a class="nav-link" href="instructor-order.html"><i
+												class="fe fe-shopping-bag nav-icon"></i>Orders</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="instructor-students.html"><i class="fe fe-users nav-icon"></i>Students</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="instructor-payouts.html"><i
+												class="fe fe-dollar-sign nav-icon"></i>Payouts</a>
+									</li>
+								</ul>
+									<!-- Navbar header -->
+								<span class="navbar-header">Account Settings</span>
+								<ul class="list-unstyled ml-n2 mb-0">
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="profile-edit.html"><i class="fe fe-settings nav-icon"></i>Edit Profile</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="security.html"><i class="fe fe-user nav-icon"></i>Security</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="social-profile.html"><i class="fe fe-refresh-cw nav-icon"></i>Social
+											Profiles</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="notifications.html"><i class="fe fe-bell nav-icon"></i>Notifications</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="profile-privacy.html"><i class="fe fe-lock nav-icon"></i>Profile
+											Privacy</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="delete-profile.html"><i class="fe fe-trash nav-icon"></i>Delete
+											Profile</a>
+									</li>
+										<!-- Nav item -->
+									<li class="nav-item">
+										<a class="nav-link" href="../index.html"><i class="fe fe-power nav-icon"></i>Sign Out</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="col-lg-9 col-md-8 col-12">
+					<!-- Card -->
+					<div class="card mb-4">
+						<!-- Card header -->
+						<div class="card-header border-bottom-0">
+							<h3 class="mb-0">Orders</h3>
+							<span>Order Dashboard is a quick overview of all current
+								orders.</span>
+						</div>
+						<!-- Table -->
+						<div class="table-responsive border-0">
+							<table class="table mb-0 text-nowrap">
+								<thead>
+									<tr>
+										<th scope="col" class="border-0">COURSES</th>
+										<th scope="col" class="border-0">AMOUNT</th>
+										<th scope="col" class="border-0">INVOICE</th>
+										<th scope="col" class="border-0">DATE</th>
+										<th scope="col" class="border-0">METHOD</th>
+										<th scope="col" class="border-0"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="align-middle border-top-0">
+											<h5 class="mb-0">
+												<a href="#!" class="text-inherit">
+													Building Scalable APIs with GraphQL
+												</a>
+											</h5>
+										</td>
+										<td class="align-middle border-top-0">$89</td>
+										<td class="align-middle border-top-0">#10023</td>
+										<td class="align-middle border-top-0">June 9, 2020</td>
+										<td class="align-middle border-top-0">Amex</td>
+										<td class="text-muted align-middle border-top-0">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="courseDropdown1"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="courseDropdown1">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="align-middle">
+											<h5 class="mb-0">
+												<a href="#!" class="text-inherit">
+													HTML5 Web Front End Development
+												</a>
+											</h5>
+										</td>
+										<td class="align-middle">$129</td>
+										<td class="align-middle">#10020</td>
+										<td class="align-middle">June 9, 2020</td>
+										<td class="align-middle">Mastercard</td>
+										<td class="text-muted align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="courseDropdown2"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="courseDropdown2">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="align-middle">
+											<h5 class="mb-0">
+												<a href="#!" class="text-inherit">Learn BasicJavaScript Courses
+												</a>
+											</h5>
+										</td>
+										<td class="align-middle">$29</td>
+										<td class="align-middle">#10018</td>
+										<td class="align-middle">June 8, 2020</td>
+										<td class="align-middle">PayPal</td>
+										<td class="text-muted align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="courseDropdown3"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="courseDropdown3">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="align-middle">
+											<h5 class="mb-0">
+												<a href="#!" class="text-inherit">
+													Get Started: React Js Courses
+												</a>
+											</h5>
+										</td>
+										<td class="align-middle">$59</td>
+										<td class="align-middle">#10003</td>
+										<td class="align-middle">June 9, 2020</td>
+										<td class="align-middle">Visa</td>
+										<td class="text-muted align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="courseDropdown4"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="courseDropdown4">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="align-middle">
+											<h5 class="mb-0">
+												<a href="#!" class="text-inherit">
+													Building Scalable APIs with GraphQL
+												</a>
+											</h5>
+										</td>
+										<td class="align-middle">$129</td>
+										<td class="align-middle">#10020</td>
+										<td class="align-middle">June 7, 2020</td>
+										<td class="align-middle">Mastercard</td>
+										<td class="text-muted align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="courseDropdown5"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="courseDropdown5">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="align-middle">
+											<h5 class="mb-0">
+												<a href="#!" class="text-inherit">
+													Master in CSS3 Courses Online
+												</a>
+											</h5>
+										</td>
+										<td class="align-middle">$29</td>
+										<td class="align-middle">#10018</td>
+										<td class="align-middle">June 8, 2020</td>
+										<td class="align-middle">PayPal</td>
+										<td class="text-muted align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="courseDropdown6"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="courseDropdown6">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="align-middle">
+											<h5 class="mb-0">
+												<a href="#!" class="text-inherit">
+													Online Angular Courses
+												</a>
+											</h5>
+										</td>
+										<td class="align-middle">$59</td>
+										<td class="align-middle">#10003</td>
+										<td class="align-middle">June 6, 2020</td>
+										<td class="align-middle">Visa</td>
+										<td class="text-muted align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="courseDropdown7"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="courseDropdown7">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="align-middle">
+											<h5 class="mb-0">
+												<a href="#!" class="text-inherit">
+													Master in CSS3 Courses Online
+												</a>
+											</h5>
+										</td>
+										<td class="align-middle">$29</td>
+										<td class="align-middle">#10018</td>
+										<td class="align-middle">June 8, 2020</td>
+										<td class="align-middle">PayPal</td>
+										<td class="text-muted align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="courseDropdown6"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="courseDropdown6">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="align-middle">
+											<h5 class="mb-0">
+												<a href="#!" class="text-inherit">
+													Online Angular Courses
+												</a>
+											</h5>
+										</td>
+										<td class="align-middle">$59</td>
+										<td class="align-middle">#10003</td>
+										<td class="align-middle">June 6, 2020</td>
+										<td class="align-middle">Visa</td>
+										<td class="text-muted align-middle">
+											<span class="dropdown">
+												<a class="text-muted text-decoration-none" href="#!" role="button" id="courseDropdown7"
+													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fe fe-more-vertical"></i>
+												</a>
+												<span class="dropdown-menu" aria-labelledby="courseDropdown7">
+													<span class="dropdown-header">Setting </span>
+													<a class="dropdown-item" href="#!"><i class="fe fe-edit dropdown-item-icon"></i>Edit</a>
+													<a class="dropdown-item" href="#!"><i class="fe fe-trash dropdown-item-icon"></i>Remove</a>
+												</span>
+											</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	@@include("../partials/footer.html")
+	<!-- Scripts -->
+	@@include("../partials/scripts.html")
+</body>
+
+</html>
