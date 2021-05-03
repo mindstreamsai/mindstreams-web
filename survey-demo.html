@@ -1,0 +1,76 @@
+<html>
+<head>
+  <style>
+    .btn-green {
+      background-color: #1ab394;
+      color: #fff;
+      border-radius: 3px;
+    }
+
+    .panel-footer {
+        text-align: right;
+        background-color: #fff;
+    }
+  </style>
+  <link href="https://unpkg.com/survey-jquery@1.8.46/modern.css" type="text/css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/survey-jquery"></script>
+  <script>
+    var surveyJson = {
+      questions: [{
+        type: "matrixdynamic",
+        addRowText: "Add language",
+        columns: [{
+          name: "Language",
+          choices: ["Javascript", "Java", "Python", "CSS", "PHP", "Ruby", "C++", "C", "Shell", "C#", "Objective-C", "R", "VimL", "Go", "Perl", "CoffeeScript", "TeX", "Swift", "Scala", "Emacs List", "Haskell", "Lua", "Clojure", "Matlab", "Arduino", "Makefile", "Groovy", "Puppet", "Rust", "PowerShell"],
+          cellType: "dropdown",
+          isRequired: true,
+          hasOther: true,
+          choicesOrder: "asc"
+        }, {
+          name: "Experience",
+          choices: ["One year or less", "From one two three years", "From three to five years", "More then five years"],
+          cellType: "dropdown",
+          isRequired: true
+        }],
+        isRequired: true,
+        name: "languages",
+        rowCount: 1,
+        title: "What programming languages do you know?"
+      }]
+    };
+
+    Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
+    Survey.defaultBootstrapCss.matrixdynamic.button = "btn btn-green";
+    // Survey.Survey.cssType = "bootstrap";
+  </script>
+</head>
+<body>
+  <div id="surveyElement"></div>
+
+  <div id="result"></div>
+
+  <script>
+    debugger;
+    var surveyJSON = {"title":"Biology Fun Questions","pages":[{"name":"page1","elements":[{"type":"imagepicker","name":"Question1","title":"Which Animal is in Artiodactyla?","isRequired":true,"choices":[{"value":"lion","imageLink":"https://surveyjs.io/Content/Images/examples/image-picker/lion.jpg"},{"value":"giraffe","imageLink":"https://surveyjs.io/Content/Images/examples/image-picker/giraffe.jpg"},{"value":"panda","imageLink":"https://surveyjs.io/Content/Images/examples/image-picker/panda.jpg"},{"value":"camel","imageLink":"https://surveyjs.io/Content/Images/examples/image-picker/camel.jpg"}],"showLabel":true,"multiSelect":true}]}],"maxTimeToFinish":10,"maxTimeToFinishPage":10,"showTimerPanel":"top"}
+
+    Survey.StylesManager.applyTheme("modern");
+
+    var survey = new Survey.Model(surveyJson);
+
+    survey.onComplete.add(function(result) {
+      document.querySelector('#result').innerHTML = "result: " + JSON.stringify(result.data);
+    });
+
+    function sendDataToServer(survey) {
+      var resultAsString = JSON.stringify(survey.data);
+      alert(resultAsString); //send Ajax request to your web server.
+    }
+
+    $("#surveyElement").Survey({
+        model:survey,
+        onComplete:sendDataToServer
+    });    
+  </script>
+</body>
+</html>

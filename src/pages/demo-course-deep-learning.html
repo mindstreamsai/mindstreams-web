@@ -4,10 +4,11 @@
 <head>
   @@include("../partials/head.html")
   <title>Course Single | Geeks - Academy Admin Template</title>
-  <script>
-    // var apiHostAndPort = 'http://api.mindstreams.ai:8000'
-    var apiHostAndPort = 'http://127.0.0.1:5000'
-    var sampleRequest = '{"id":"6120894d-0ce5-4738-adcb-6736b943b202","sessionId":"7ac9cfd9-db52-429a-a621-2e43dba7a267","userId":"austinbeaudreau@gmail.com","ts":"2021-04-25T19:15:39.301251","context":{"user":{"name":{"firstName":"Austin","lastName":"Beaudreau","display_name":"Austin Beaudreau"},"location":{"country":"US","time_zone":"America\/Chicago"},"language":"en","email":"austinbeaudreau@gmail.com","organization":null,"_extended":{"_class":"user","name":"Austin","surname":"Beaudreau","encrypted_id":"x01WoHO9JA8HJcGU6nFKT8fwA==","is_authenticated":true,"learning_languages":[],"country":"US","has_made_paid_purchase":true,"created":"2018-03-22T16:43:33Z","locale":"en_US","job_title":"","initials":"AB","language":"en","email":"austinbeaudreau@gmail.com","organization":null,"display_name":"Austin Beaudreau","time_zone":"America\/Chicago","number_of_courses_purchased":5,"image_50x50":"https:\/\/img-a.udemycdn.com\/user\/50x50\/anonymous_3.png?-JXqQyEacyJx4_5cXfiKrBtRwJvlZydnORHcH8qD-05J0jZy8p-rtCeU1p8Bu_bnq-4pBEQt6fmleCIVoB1XQzdYMhPXw3leIU50H8ya4xio8zFQzgDWoF4","title":"Austin Beaudreau"}},"device":{"isTablet":false,"isPC":true},"site":{"domain":"udemy.com","google_tag_manager_id":"GTM-7BF3X","google_analytics_id":"UA-12366301-45","visitor_uuid":"3f90757c055347c3835e4cdffc47ae0e","first_visit_time":"2021-02-11T03:58:33.554Z","is_first_time_visitor":false},"page":{"url":"https:\/\/www.udemy.com\/course\/csharp-tutorial-for-beginners\/learn\/lecture\/2936428#overview","path":"\/course\/csharp-tutorial-for-beginners\/learn\/lecture\/2936428"},"content":{"kind":"curriculum.content.video","url":"https:\/\/www.udemy.com\/02e9db8a-07af-4b30-b4ec-99afa07e32b0","status":"started","duration":37.2,"position":12.1,"speed":1}},"feedback":[{"id":"6120894d-0ce5-4738-adcb-6736b943b202","category":"understanding","action":"video.slower","ts":"2021-04-25T19:15:39.301251","result":0.8},{"id":"3468367d-0ce5-4738-adcb-6736b943b201","category":"engagement","action":"game.trivia","ts":"2021-04-25T19:15:39.301251","result":0}]}';
+
+<script>
+    var apiHostAndPort = 'http://api.mindstreams.ai:8000'
+    // var apiHostAndPort = 'http://127.0.0.1:5000'
+    var sampleRequest = '{"id":"6120894d-0ce5-4738-adcb-6736b943b202","sessionId":"7ac9cfd9-db52-429a-a621-2e43dba7a267","userId":"chloebeaudreau@gmail.com","ts":"2021-04-25T19:15:39.301251","context":{"user":{"name":{"firstName":"Austin","lastName":"Beaudreau","display_name":"Austin Beaudreau"},"location":{"country":"US","time_zone":"America\/Chicago"},"language":"en","email":"austinbeaudreau@gmail.com","organization":null,"_extended":{"_class":"user","name":"Austin","surname":"Beaudreau","encrypted_id":"x01WoHO9JA8HJcGU6nFKT8fwA==","is_authenticated":true,"learning_languages":[],"country":"US","has_made_paid_purchase":true,"created":"2018-03-22T16:43:33Z","locale":"en_US","job_title":"","initials":"AB","language":"en","email":"austinbeaudreau@gmail.com","organization":null,"display_name":"Austin Beaudreau","time_zone":"America\/Chicago","number_of_courses_purchased":5,"image_50x50":"https:\/\/img-a.udemycdn.com\/user\/50x50\/anonymous_3.png?-JXqQyEacyJx4_5cXfiKrBtRwJvlZydnORHcH8qD-05J0jZy8p-rtCeU1p8Bu_bnq-4pBEQt6fmleCIVoB1XQzdYMhPXw3leIU50H8ya4xio8zFQzgDWoF4","title":"Austin Beaudreau"}},"device":{"isTablet":false,"isPC":true},"site":{"domain":"udemy.com","google_tag_manager_id":"GTM-7BF3X","google_analytics_id":"UA-12366301-45","visitor_uuid":"3f90757c055347c3835e4cdffc47ae0e","first_visit_time":"2021-02-11T03:58:33.554Z","is_first_time_visitor":false},"page":{"url":"https:\/\/www.udemy.com\/course\/csharp-tutorial-for-beginners\/learn\/lecture\/2936428#overview","path":"\/course\/csharp-tutorial-for-beginners\/learn\/lecture\/2936428"},"content":{"kind":"curriculum.content.video","url":"https:\/\/www.udemy.com\/02e9db8a-07af-4b30-b4ec-99afa07e32b0","status":"started","duration":37.2,"position":12.1,"speed":1}},"feedback":[{"id":"6120894d-0ce5-4738-adcb-6736b943b202","category":"understanding","action":"video.slower","ts":"2021-04-25T19:15:39.301251","result":0.8},{"id":"3468367d-0ce5-4738-adcb-6736b943b201","category":"engagement","action":"game.trivia","ts":"2021-04-25T19:15:39.301251","result":0}]}';
     var isBusy = false;
     var userLastInteractionTime = Date.now();
 
@@ -77,6 +78,11 @@
         isBusy = false;
     };
 
+    function AdaptiveLearning_Survey_ReviewQuestions() {
+      document.getElementById('videoFrame').style.display = 'None';
+      document.getElementById('surveyFrame').style.display = 'Block';
+    }
+
     function AdaptiveLearning_Feedback_Ask() {
         isBusy = true;
         // prompt('Have any feedback for me?');
@@ -110,7 +116,9 @@
         request.context.content.speed = video.playbackRate;
         request.context.content.position = video.position;
         request.context.content.duration = video.duration;
-        request.context.user.lastInteractionTime = userLastInteractionTime;
+
+        // request.context.user.lastInteractionTime = userLastInteractionTime;
+        request.context.user.lastInteractionTime = 0;
 
         var apicall = apiHostAndPort + '/api/users/' + userId + '/recommendations';
         var xhr = new XMLHttpRequest();
@@ -136,7 +144,8 @@
                         case 'video.play': AdaptiveLearning_Video_Play(); break;
                         case 'game.trivia': AdaptiveLearning_Game_Trivia(); break;
                         case 'feedback.ask': AdaptiveLearning_Feedback_Ask(); break;
-                        case 'presence.ask': AdaptiveLearning_Presence_Ask(); break;                        
+                        case 'presence.ask': AdaptiveLearning_Presence_Ask(); break;
+                        case 'topic.review_questions': AdaptiveLearning_Survey_ReviewQuestions(); break;   
                     }
                 }
             }
@@ -153,15 +162,20 @@
   @@include("../partials/navbar.html",{ "classList": "navbar-default" })
   <!-- Video section -->
   <div class="p-lg-5 py-5">
-    <div class="container">
+    <div class="container card mb-4 card-hover">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-12 mb-5">
-          <div class="rounded-lg embed-responsive embed-responsive-16by9" style="height: 600px;">
-            <video id="video" width="320" height="240" controls preload="auto" src="https://mindstreams-video.s3.us-east-2.amazonaws.com/demo/mit_introduction_to_deeplearning_1.mp4"></video>
+          <!--<div class="rounded-lg embed-responsive embed-responsive-16by9" style="height: 600px;">-->
+            <div id="surveyFrame" class="rounded-lg embed-responsive" style="height: 600px; display: None; text-align: center; vertical-align: middle;">
+              <div id="surveyContainer"></div>
+              <div id="result"></div>
+            </div>
+            <div id="videoFrame" class="rounded-lg embed-responsive embed-responsive-16by9" style="height: 600px;">
+              <video id="video" width="320" height="240" controls preload="auto" src="https://mindstreams-video.s3.us-east-2.amazonaws.com/demo/mit_introduction_to_deeplearning_1.mp4"></video>
           </div>
         </div>
       </div>
-      <!-- Content -->
+      <!-- Content -->      
       <div class="row">
         <div class="col-xl-8 col-lg-12 col-md-12 col-12 mb-4 mb-xl-0">
           <!-- Card -->
@@ -2029,6 +2043,35 @@ IntroToDeepLearning.com
 
   <!-- Scripts -->
   @@include("../partials/scripts.html")
+
+  <!-- For Survey Tool -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/survey-jquery@1.8.46/survey.jquery.min.js"></script>  
+  <script>
+    Survey.StylesManager.applyTheme("bootstrap");
+
+    // var surveyJson = {"title":"Biology Fun Questions","pages":[{"name":"page1","elements":[{"type":"imagepicker","name":"Question1","title":"Which Animal is in Artiodactyla?","isRequired":true,"choices":[{"value":"lion","imageLink":"https://surveyjs.io/Content/Images/examples/image-picker/lion.jpg"},{"value":"giraffe","imageLink":"https://surveyjs.io/Content/Images/examples/image-picker/giraffe.jpg"},{"value":"panda","imageLink":"https://surveyjs.io/Content/Images/examples/image-picker/panda.jpg"},{"value":"camel","imageLink":"https://surveyjs.io/Content/Images/examples/image-picker/camel.jpg"}],"showLabel":true,"multiSelect":true}]}]}
+    var surveyJson = {"title":"FRQ","pages":[{"name":"page2","elements":[{"type":"comment","name":"question_1","title":"Why is the Sigmoid function helpful in Machine Learning?","description":"Share your answer in 1-2 sentences"}]}]}
+
+    var survey = new Survey.Model(surveyJson);
+    survey.onComplete.add(function(result) {
+      document.querySelector('#result').innerHTML = "result: " + JSON.stringify(result.data);
+
+    });
+    function sendDataToServer(survey) {
+      var resultAsString = JSON.stringify(survey.data);
+      alert(resultAsString); //send Ajax request to your web server.
+      document.getElementById('videoFrame').style.display = 'Block';
+      document.getElementById('surveyFrame').style.display = 'None';
+
+    }
+    $("#surveyContainer").Survey({
+        model: survey,
+        onComplete: sendDataToServer
+    });
+  </script>
+  <!-- END For Survey Tool -->    
+
 </body>
 
 </html>
