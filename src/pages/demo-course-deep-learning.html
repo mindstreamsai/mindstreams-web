@@ -4,6 +4,133 @@
 <head>
   @@include("../partials/head.html")
   <title>Course Single | Geeks - Academy Admin Template</title>
+  <script>
+    var apiHostAndPort = 'http://api.mindstreams.ai:8000'
+    var sampleRequest = '{"id":"6120894d-0ce5-4738-adcb-6736b943b202","sessionId":"7ac9cfd9-db52-429a-a621-2e43dba7a267","userId":"austinbeaudreau@gmail.com","ts":"2021-04-25T19:15:39.301251","context":{"user":{"name":{"firstName":"Austin","lastName":"Beaudreau","display_name":"Austin Beaudreau"},"location":{"country":"US","time_zone":"America\/Chicago"},"language":"en","email":"austinbeaudreau@gmail.com","organization":null,"_extended":{"_class":"user","name":"Austin","surname":"Beaudreau","encrypted_id":"x01WoHO9JA8HJcGU6nFKT8fwA==","is_authenticated":true,"learning_languages":[],"country":"US","has_made_paid_purchase":true,"created":"2018-03-22T16:43:33Z","locale":"en_US","job_title":"","initials":"AB","language":"en","email":"austinbeaudreau@gmail.com","organization":null,"display_name":"Austin Beaudreau","time_zone":"America\/Chicago","number_of_courses_purchased":5,"image_50x50":"https:\/\/img-a.udemycdn.com\/user\/50x50\/anonymous_3.png?-JXqQyEacyJx4_5cXfiKrBtRwJvlZydnORHcH8qD-05J0jZy8p-rtCeU1p8Bu_bnq-4pBEQt6fmleCIVoB1XQzdYMhPXw3leIU50H8ya4xio8zFQzgDWoF4","title":"Austin Beaudreau"}},"device":{"isTablet":false,"isPC":true},"site":{"domain":"udemy.com","google_tag_manager_id":"GTM-7BF3X","google_analytics_id":"UA-12366301-45","visitor_uuid":"3f90757c055347c3835e4cdffc47ae0e","first_visit_time":"2021-02-11T03:58:33.554Z","is_first_time_visitor":false},"page":{"url":"https:\/\/www.udemy.com\/course\/csharp-tutorial-for-beginners\/learn\/lecture\/2936428#overview","path":"\/course\/csharp-tutorial-for-beginners\/learn\/lecture\/2936428"},"content":{"kind":"curriculum.content.video","url":"https:\/\/www.udemy.com\/02e9db8a-07af-4b30-b4ec-99afa07e32b0","status":"started","duration":37.2,"position":12.1,"speed":1}},"feedback":[{"id":"6120894d-0ce5-4738-adcb-6736b943b202","category":"understanding","action":"video.slower","ts":"2021-04-25T19:15:39.301251","result":0.8},{"id":"3468367d-0ce5-4738-adcb-6736b943b201","category":"engagement","action":"game.trivia","ts":"2021-04-25T19:15:39.301251","result":0}]}';
+    var isBusy = false;
+
+    Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+        get: function(){
+            return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+        }
+    });
+
+    function AddMarkers() {
+        // Video and seekbar
+        var video = document.getElementById('video');
+        var seekBar = document.getElementById('seekbar');
+
+        // Positions of markers in seconds.
+        var positions = [3, 6.5, 7];
+
+        // Add each marker to the #seekbar element.
+        positions.forEach(function(position) {
+            // Is position within range of the duration?
+            if (position <= video.duration) {
+
+                // Calculate position in percentage and add to the #seekbar.
+                var left = (position / video.duration) * 100 + '%';
+
+                // Create marker and give it the left value.
+                var marker = document.createElement('div');
+                marker.classList.add('bubles');
+                marker.style.left = left;
+                seekBar.appendChild(marker);
+            }
+        });                
+    }
+
+    function AdaptiveLearning_Video_Slower() {
+        var video = document.getElementsByTagName('video')[0];
+        video.playbackRate = video.playbackRate * 0.75;
+    };
+
+    function AdaptiveLearning_Video_Faster() {
+        var video = document.getElementsByTagName('video')[0];
+        video.playbackRate = video.playbackRate * 1.25;
+    };
+
+    function AdaptiveLearning_Video_Pause() {
+        var video = document.getElementsByTagName('video')[0];
+        // video.pause();
+    };
+
+    function AdaptiveLearning_Video_Play() {
+        var video = document.getElementsByTagName('video')[0];
+        video.play();
+    };
+
+    function AdaptiveLearning_Video_Resume() {
+        var video = document.getElementsByTagName('video')[0];
+        // video.play();
+    };
+
+    function AdaptiveLearning_Game_Trivia() {
+        isBusy = true;
+        prompt('Who invented the Gradient Descent algorithm?');
+        isBusy = false;
+    };
+
+    function AdaptiveLearning_Feedback_Ask() {
+        isBusy = true;
+        prompt('Have any feedback for me?');
+        isBusy = false;
+    };
+
+
+
+    function DoStuff() {
+        if (isBusy) {
+            return false;
+        }
+        var userId = '1000';
+        var request = JSON.parse(sampleRequest);
+        var video = document.getElementById('video');
+        var isPlaying = video.playing;
+        var isPaused = video.paused;
+        
+        if (isPaused || isPlaying) {
+            request.context.content.status = (isPaused && 'paused') || 'playing';                    
+        } else {
+            request.context.content.status = 'stopped';
+        }
+        request.context.content.speed = video.playbackRate;
+        request.context.content.position = video.position;
+        request.context.content.duration = video.duration;
+
+        var apicall = apiHostAndPort + '/api/users/' + userId + '/recommendations';
+        var xhr = new XMLHttpRequest();
+
+        xhr.open('POST', apicall); // Start preparing an HTTP API call...
+
+        // set headers
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+
+        xhr.onreadystatechange = function() {//Call a function when the state changes.
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var output = JSON.parse(xhr.responseText);
+                var recommendations = output['recommendations']
+                console.log(JSON.stringify(recommendations));
+                if (recommendations.length > 0) {
+                    var top_action = recommendations[0].action;
+                    switch (top_action) {
+                        case 'video.slower': AdaptiveLearning_Video_Slower(); break;
+                        case 'video.faster': AdaptiveLearning_Video_Faster(); break;
+                        case 'video.pause': AdaptiveLearning_Video_Pause(); break;
+                        case 'video.resume': AdaptiveLearning_Video_Resume(); break;
+                        case 'video.play': AdaptiveLearning_Video_Play(); break;
+                        case 'game.trivia': AdaptiveLearning_Game_Trivia(); break;
+                        case 'feedback.ask': AdaptiveLearning_Feedback_Ask(); break;
+                    }
+                }
+            }
+        };
+        xhr.send(JSON.stringify(request));
+    }
+
+    setInterval(DoStuff, 5000);
+  </script>
 </head>
 
 <body>
@@ -15,7 +142,7 @@
       <div class="row">
         <div class="col-lg-12 col-md-12 col-12 mb-5">
           <div class="rounded-lg embed-responsive embed-responsive-16by9" style="height: 600px;">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PkZNo7MFNFg"></iframe>
+            <video id="video" width="320" height="240" controls preload="auto" src="https://signostix-video.s3.amazonaws.com/mit_lecture5.mp4"></video>
           </div>
         </div>
       </div>
