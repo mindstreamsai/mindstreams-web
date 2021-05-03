@@ -43,7 +43,7 @@
                 marker.style.left = left;
                 seekBar.appendChild(marker);
             }
-        });                
+        });
     }
 
     function AdaptiveLearning_Video_Slower() {
@@ -101,9 +101,9 @@
         var video = document.getElementById('video');
         var isPlaying = video.playing;
         var isPaused = video.paused;
-        
+
         if (isPaused || isPlaying) {
-            request.context.content.status = (isPaused && 'paused') || 'playing';                    
+            request.context.content.status = (isPaused && 'paused') || 'playing';
         } else {
             request.context.content.status = 'stopped';
         }
@@ -203,10 +203,13 @@
               </div>
               <div class="d-flex justify-content-between">
                 <div class="d-flex align-items-center">
-                  <img src="../assets/images/avatar/chloe.jpg" class="rounded-circle avatar-md" alt="" />
+                  <img src="../assets/images/brand/logo/logo.png" class="rounded-circle avatar-md" alt="" />
                   <div class="ml-2 lh-1">
-                    <h4 class="mb-1">Chloe Beaudreau</h4>
-                    <p class="font-size-xs mb-0">@chloe</p>
+                    <h4 class="mb-1">MIT OpenCourseWare</h4>
+                    <p class="font-size-xs mb-0">@© Alexander Amini and Ava Soleimany
+MIT 6.S191: Introduction to Deep Learning
+IntroToDeepLearning.com
+</p>
                   </div>
                 </div>
                 <div>
@@ -247,19 +250,11 @@
                 <div class="tab-pane fade show active" id="description" role="tabpanel"
                   aria-labelledby="description-tab">
                   <div class="mb-4">
-                    <h3 class="mb-2">Course Descriptions</h3>
+                    <h3 class="mb-2">Course Description</h3>
                     <p>
-                      If you’re learning to program for the first time, or if you’re coming from a different language,
-                      this course, JavaScript: Getting Started, will give you the basics for coding in JavaScript.
-                      First, you'll discover the types of applications that can be built with JavaScript, and the
-                      platforms they’ll run on.
-                    </p>
-                    <p>
-                      Next, you’ll explore the basics of the language, giving plenty of examples. Lastly, you’ll put
-                      your JavaScript knowledge to work and modify a modern, responsive web page. When you’re finished
-                      with this course, you’ll have the skills and knowledge in JavaScript to create simple programs,
-                      create simple web applications, and modify web pages.
-                    </p>
+                      This is MIT's introductory course on deep learning methods with applications to computer vision,
+                      natural language processing, biology, and more! Students will gain foundational knowledge of deep
+                      learning algorithms and get practical experience in building neural networks in TensorFlow.
                   </div>
                   <h4 class="mb-3">What you’ll learn</h4>
                   <div class="row mb-3">
