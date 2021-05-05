@@ -7,7 +7,7 @@
 
     function e() {
         var e = new Date;
-        e.setDate(e.getDate() + 99);
+        e.setDate(e.getDate() + 3);
 
         var dd = e.getDate();
         var mm = e.getMonth() + 1;
