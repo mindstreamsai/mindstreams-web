@@ -1,6 +1,4 @@
-# Geeks Academy Admin Template
-
-Geeks is a fully responsive and yet modern premium bootstrap template. Geeks design is suit for academy and online courses marketplace with admin dashboard. Geeks provides clean and consistent page designs to help you to create beautiful looking contents. Geeks is feature-rich components and beautiful designed pages help you create the best possible website and web application projects.
+# MindStreams.ai Website
 
 ### Documentation ###
 
